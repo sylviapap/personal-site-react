@@ -1,7 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import { Route, withRouter } from 'react-router-dom';
-// import './App.css';
+import './App.css';
 import Nav from './components/Nav';
+import SimpleTabs from './components/TabPanel';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import About from './pages/About';
@@ -18,7 +19,7 @@ class App extends Component {
         <Container maxWidth="sm">
           <Box my={4}>
             <Typography variant="h4" component="h1" gutterBottom>
-              <Nav/>
+              <SimpleTabs />
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
