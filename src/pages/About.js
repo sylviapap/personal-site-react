@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import {resumeData} from '../services/resumeData'
+import {data} from '../services/data'
 
 class About extends Component {
   render() {
-    const bio = resumeData.bio;
+    const bio = data.bio;
 
     return (
       <section id="about">

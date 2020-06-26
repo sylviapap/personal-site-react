@@ -1,4 +1,4 @@
-export const resumeData = {
+export const data = {
   name: "Sylvia", 
   occupation: "Software Engineer",
   description: "full stack swe with background in philosophy, law, international relations",

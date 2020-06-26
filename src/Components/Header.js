@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import {resumeData} from '../services/resumeData'
+import {data} from '../services/data'
 
 class Header extends Component {
   render() {
-    const name = resumeData.name;
+    const name = data.name;
 
     return (
       <nav id="nav-wrap">

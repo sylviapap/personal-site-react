@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import {resumeData} from '../services/resumeData'
+import {data} from '../services/data'
 
 class Home extends Component {
   render() {
-    const name = resumeData.name;
-    const email = resumeData.email;
-    const phone = resumeData.phone;
-    const bio = resumeData.bio;
-    const profilepic= "images/"+resumeData.image;
+    const name = data.name;
+    const email = data.email;
+    const phone = data.phone;
+    const bio = data.bio;
+    const profilepic= "images/"+data.image;
 
     return (
       <section id="home">

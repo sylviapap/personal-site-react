@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import {resumeData} from '../services/resumeData'
+import {data} from '../services/data'
 
 class Contact extends Component {
   render() {
-    const email = resumeData.email;
+    const email = data.email;
 
     return (
       <section id="contact">
