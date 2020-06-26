@@ -1,7 +1,7 @@
 export const data = {
   name: "Sylvia", 
   occupation: "Software Engineer",
-  description: "full stack swe with background in philosophy, law, international relations",
+  description: "im a full stack swe looking for work",
   image: "profilepic.png",
   bio: "full stack swe ruby, rails, react, python, with background in philosophy, law, international relations",
   contactmessage: "lets talk",

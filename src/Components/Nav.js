@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import {data} from '../services/data'
+import Link from '@material-ui/core/Link';
 
-class Header extends Component {
+class Nav extends Component {
   render() {
-    const name = data.name;
-
     return (
       <nav id="nav-wrap">
         <NavLink to="/">Home</NavLink>
@@ -18,4 +16,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default Nav;
