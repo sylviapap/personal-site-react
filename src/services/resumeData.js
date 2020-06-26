@@ -3,7 +3,7 @@ export const resumeData = {
   occupation: "Software Engineer",
   description: "full stack swe with background in philosophy, law, international relations",
   image: "profilepic.png",
-  bio: "ruby, rails, react, python",
+  bio: "full stack swe ruby, rails, react, python, with background in philosophy, law, international relations",
   contactmessage: "lets talk",
   email: "sylviapap1@gmail.com",
   phone: "805-709-7858",

@@ -1,19 +1,21 @@
 import React, {Component} from 'react';
-import { withRouter } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 import './App.css';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import About from './Components/About';
-import Contact from './Components/Contact';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Footer from './components/Footer';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header/>
-        {/* <Footer/> */}
-        {/* <About/> */}
-        {/* <Contact/> */}
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Footer/>
       </div>
       )
     }
