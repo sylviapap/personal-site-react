@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <Typography variant="caption" display="block" gutterBottom>
-        <footer>&copy; Sylvia Pap | 2020</footer>
+        <footer>&copy; Sylvia Pap | {new Date().getFullYear()}</footer>
       </Typography>
     );
   }
