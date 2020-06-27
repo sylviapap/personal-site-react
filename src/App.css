@@ -3,48 +3,18 @@
   width: 250px;
 }
 
-/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
-
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-  vertical-align: baseline;
+body {
+  background: linear-gradient(45deg, #ccafac 20%, #bebbcc 50%, #9ba6c9 80%, #8d95b8);
 }
 
-ol, ul {
-	list-style: none;
-}
-
-body, html, #root, .App {
+html, body, #root {
   height: 100%;
   width: 100%;
   margin: 0;
+  position: absolute;
 }
 
-body {
-  background-image: url("images/overlay.png"), linear-gradient(45deg, #ccafac 20%, #bebbcc 50%, #9ba6c9 80%, #8d95b8);
-  background-size: 128px 128px, auto;
-}
-
-header {
-  text-align: center;
-  margin: 3%;
-  font-size: -webkit-xxx-large;
-}
-
+/* 
 nav {
   display: flex;
   flex-direction: row;
@@ -67,14 +37,6 @@ footer {
   margin: 1%;
 }
 
-html {
-  color: rgba(255, 255, 255, 0.75);
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.65;
-}
-
 a {
   -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -89,37 +51,4 @@ a:hover {
   border-bottom-color: transparent;
   color: #ffe4b4;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  color: rgba(255, 255, 255, 0.875);
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  line-height: 1.3;
-  margin: 0 0 0.75rem 0;
-  letter-spacing: -0.05em;
-}
-
-code {
-  background: rgba(255, 255, 255, 0.075);
-  border-radius: 0.25rem;
-  font-family: "Courier New", monospace;
-  font-size: 0.8rem;
-  margin: 0 0.25rem;
-  padding: 0.25rem 0.65rem;
-}
-
-@media screen and (max-width: 736px) {
-
-  html {
-    font-size: 12pt;
-  }
-
-}
-
-@media screen and (max-width: 360px) {
-
-  html {
-    font-size: 11pt;
-  }
-
-} */
+*/
