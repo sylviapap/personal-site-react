@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 
-const Nav = () => {
+class Nav extends Component {
+  render() {
     return (
       <div className="nav">
         <Grid container spacing={1}>
@@ -25,5 +26,6 @@ const Nav = () => {
       </div>
     );
   }
+}
 
 export default Nav
