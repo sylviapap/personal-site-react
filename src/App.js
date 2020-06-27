@@ -9,7 +9,6 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 
 import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
 class App extends Component {
@@ -17,19 +16,17 @@ class App extends Component {
     return (
       <Fragment>
         <Container maxWidth="sm">
-          <Box my={4}>
-            <Typography variant="h4" component="h1" gutterBottom>
-              <Nav />
-              <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/contact" component={Contact} />
-              <Footer />
-            </Typography>
+          <Box my={5}>
+            <Nav />
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Footer />
           </Box>
         </Container>
       </Fragment>
-      )
-    }
+    )
+  }
 }
 
 export default App;
