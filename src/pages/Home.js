@@ -14,10 +14,10 @@ class Home extends Component {
          <Typography variant="h1" component="h2" gutterBottom>
             Hi, I'm {name}
          </Typography>
-         <img className="profile-pic"  src={profilepic} alt="Profile Pic" />
-         <Typography variant="body1" gutterBottom>
+         <Typography variant="h5" gutterBottom>
             {description}
          </Typography>
+         <img className="profile-pic"  src={profilepic} alt="Profile Pic" />
       </section>
     );
   }
