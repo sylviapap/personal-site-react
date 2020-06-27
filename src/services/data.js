@@ -1,9 +1,10 @@
 export const data = {
   name: "Sylvia", 
   occupation: "Software Engineer",
-  description: "full stack web developer looking for new opportunities",
+  description: "Full Stack Web Development Software Engineer",
   image: "profilepic.png",
   bio: "I am a recent graduate of Flatiron School's Full Stack Immersive Software Engineering program. I have experience in Ruby, Rails, JavaScript, React, Redux, and Python3.",
+  status: "looking for new opportunities",
   email: "sylviapap1@gmail.com",
   phone: "805-709-7858",
   address: {
