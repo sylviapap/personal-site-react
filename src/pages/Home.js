@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {data} from '../services/data'
 
+import Typography from '@material-ui/core/Typography';
+
 class Home extends Component {
   render() {
     const name = data.name;
@@ -9,15 +11,13 @@ class Home extends Component {
 
     return (
       <section id="home">
-         <header>Hi, I'm {name}</header>
-         <div className="content">
-            <div className="column">
-               <img className="profile-pic"  src={profilepic} alt="Profile Pic" />
-            </div>
-            <div className="column">
-               <p>{description}</p>
-            </div>
-         </div>
+         <Typography variant="h1" component="h2" gutterBottom>
+            Hi, I'm {name}
+         </Typography>
+         <img className="profile-pic"  src={profilepic} alt="Profile Pic" />
+         <Typography variant="body1" gutterBottom>
+            {description}
+         </Typography>
       </section>
     );
   }
