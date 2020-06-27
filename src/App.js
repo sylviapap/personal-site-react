@@ -20,11 +20,10 @@ class App extends Component {
           <Box my={4}>
             <Typography variant="h4" component="h1" gutterBottom>
               <Nav />
-              {/* <SimpleTabs /> */}
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
-              <Footer/>
+              <Footer />
             </Typography>
           </Box>
         </Container>
