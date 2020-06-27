@@ -1,12 +1,12 @@
 import React, {Component, Fragment} from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
-import Nav from './components/Nav.js';
+import Nav from './components/Nav';
 // import SimpleTabs from './components/TabPanel';
-import Home from './pages/Home.js';
-import Footer from './components/Footer.js';
-import About from './pages/About.js';
-import Contact from './pages/Contact.js';
+import Home from './pages/Home';
+import Footer from './components/Footer';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
