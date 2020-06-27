@@ -14,6 +14,14 @@ html, body, #root {
   position: absolute;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  margin: 1%;
+}
+
 /* 
 nav {
   display: flex;
@@ -29,13 +37,7 @@ nav {
   display: flex;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  text-align: right;
-  margin: 1%;
-}
+
 
 a {
   -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
