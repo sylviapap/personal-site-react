@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 
 class Home extends Component {
   render() {
-    const name = data.name;
+    const name = data.firstname;
     const description = data.description;
     const profilepic= "images/"+data.image;
 
