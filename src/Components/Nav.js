@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 
 const Nav = () => {
     return (
-      <nav>
+      <div className="nav">
         <Grid container spacing={1}>
           <Grid item xs={2.5}>
             <NavLink to="/">Home</NavLink>
@@ -22,7 +22,7 @@ const Nav = () => {
             <NavLink to="/contact">Contact</NavLink>
           </Grid>
         </Grid>        
-      </nav>
+      </div>
     );
   }
 
