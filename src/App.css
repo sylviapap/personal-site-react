@@ -4,7 +4,7 @@
 }
 
 body {
-  background: linear-gradient(45deg, #ccafac 20%, #bebbcc 50%, #9ba6c9 80%, #8d95b8);
+  background: linear-gradient(#ccafac 20%, #bebbcc, #9ba6c9, #8d95b8, #ccafac );
 }
 
 html, body, #root {
