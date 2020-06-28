@@ -43,7 +43,6 @@ const ProjectCard = props =>  {
 
   return (
     <Card className={classes.root}>
-      <CardActionArea href={websiteURL}>
         <CardMedia
           component="img"
           alt={description}
@@ -51,7 +50,6 @@ const ProjectCard = props =>  {
           image={img}
           title={title}
         />      
-      </CardActionArea>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {title}
@@ -64,15 +62,16 @@ const ProjectCard = props =>  {
           </Typography>
         </CardContent>
       <CardActions>
-        <Button size="small" color="primary" href={websiteURL}>
+        {websiteURL ? <Button size="small" color="primary" href={websiteURL}>
           Visit Site
-        </Button>
+        </Button> : null}
+        
         <Button size="small" color="primary" href={githubURL}>
           GitHub
         </Button>
 
         {blogURL ? <Button size="small" color="primary" href={blogURL}>
-          Blog
+          Blog Post
         </Button> : null} 
         
       </CardActions>
