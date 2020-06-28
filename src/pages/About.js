@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 import {data} from '../services/data'
 
+import Typography from '@material-ui/core/Typography';
+
 class About extends Component {
   render() {
     const bio = data.bio;
 
     return (
       <section id="about">
-      <div className="row">
-         <div className="nine columns main-col">
-            <h2>About Me</h2>
-            <p>{bio}</p>
-         </div>
-      </div>
+        <Typography variant="h2" component="h2" gutterBottom>
+          About Me
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          {bio}
+        </Typography>
       </section>
     );
   }

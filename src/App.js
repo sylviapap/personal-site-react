@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Footer from './components/Footer';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Projects from './pages/Projects';
 
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
@@ -21,6 +22,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
+            <Route path="/projects" component={Projects} />
             <Footer />
           </Box>
         </Container>

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {data} from '../services/data'
 
+import Typography from '@material-ui/core/Typography';
+
 class Contact extends Component {
   render() {
     const email = data.email;
@@ -8,11 +10,13 @@ class Contact extends Component {
 
     return (
       <section id="contact">
-        <div className="row">
-          <h2>Contact Me</h2>
-          <p>{email}</p>
-          <p>{phone}</p>
-        </div>
+        <Typography variant="h2" component="h2" gutterBottom>
+          Contact Me
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          {email}<br></br>
+          {phone}
+        </Typography>
       </section>
     );
   }
