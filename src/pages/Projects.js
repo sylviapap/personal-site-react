@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {data} from '../services/data'
+import ProjectCard from '../components/ProjectCard'
 
 import Typography from '@material-ui/core/Typography';
 
@@ -12,9 +13,7 @@ class Projects extends Component {
         <Typography variant="h2" component="h2" gutterBottom>
           Projects
         </Typography>
-        <Typography variant="body1" gutterBottom>
-          {}
-        </Typography>
+        {projects.map(project => <ProjectCard key={projects.indexOf(project)} project={project} />)}
       </section>
     );
   }
