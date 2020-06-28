@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Contact() {
   const classes = useStyles();
-  const preventDefault = (event) => event.preventDefault();
   const email = data.email;
   const phone = data.phone;
 
@@ -37,7 +36,7 @@ export default function Contact() {
             <MailIcon/>
           </Avatar>
         </ListItemAvatar>
-        <Link href="mailto:sylviapap1@gmail.com" onClick={preventDefault} color="inherit">
+        <Link href="mailto:sylviapap1@gmail.com" color="inherit">
           <ListItemText primary={email} />
         </Link>
       </ListItem>
@@ -57,7 +56,7 @@ export default function Contact() {
             <LinkedInIcon />
           </Avatar>
         </ListItemAvatar>
-        <Link href="https://www.linkedin.com/in/sylvia-pap/" onClick={preventDefault} color="inherit">
+        <Link href="https://www.linkedin.com/in/sylvia-pap/" color="inherit">
           <ListItemText primary="LinkedIn" />
         </Link>
       </ListItem>
@@ -68,7 +67,7 @@ export default function Contact() {
             <GitHubIcon />
           </Avatar>
         </ListItemAvatar>
-        <Link href="https://github.com/sylviapap" onClick={preventDefault} color="inherit">
+        <Link href="https://github.com/sylviapap" color="inherit">
           <ListItemText primary="GitHub" />
         </Link>
       </ListItem>
@@ -79,7 +78,7 @@ export default function Contact() {
             <ForumIcon />
           </Avatar>
         </ListItemAvatar>
-        <Link href="https://dev.to/sylviapap" onClick={preventDefault} color="inherit">
+        <Link href="https://dev.to/sylviapap" color="inherit">
           <ListItemText primary="Blog" />
         </Link>
       </ListItem>
@@ -90,7 +89,7 @@ export default function Contact() {
             <TwitterIcon />
           </Avatar>
         </ListItemAvatar>
-        <Link href="https://twitter.com/sylviapapdev" onClick={preventDefault} color="inherit">
+        <Link href="https://twitter.com/sylviapapdev" color="inherit">
           <ListItemText primary="Twitter" />
         </Link>
       </ListItem>
