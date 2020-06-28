@@ -9,7 +9,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import MailIcon from '@material-ui/icons/Mail';
-import PhoneIcon from '@material-ui/icons/Phone';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import ForumIcon from '@material-ui/icons/Forum';
@@ -24,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
 export default function Contact() {
   const classes = useStyles();
   const email = data.email;
-  const phone = data.phone;
 
   return (
     <Typography variant="h2" component="h2" gutterBottom>
@@ -39,15 +37,6 @@ export default function Contact() {
         <Link href="mailto:sylviapap1@gmail.com" color="inherit">
           <ListItemText primary={email} />
         </Link>
-      </ListItem>
-      
-      <ListItem>
-        <ListItemAvatar>
-          <Avatar>
-            <PhoneIcon />
-          </Avatar>
-        </ListItemAvatar>
-          <ListItemText primary={phone} />        
       </ListItem>
       
       <ListItem>
