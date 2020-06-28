@@ -1,6 +1,7 @@
 import React from 'react';
 import {data} from '../services/data'
 import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -27,6 +28,8 @@ export default function Contact() {
   const phone = data.phone;
 
   return (
+    <Typography variant="h2" component="h2" gutterBottom>
+      Contact Me
     <List className={classes.root}>
       <ListItem>
         <ListItemAvatar>
@@ -92,5 +95,6 @@ export default function Contact() {
         </Link>
       </ListItem>
     </List>
+    </Typography>
   );
 }

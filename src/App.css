@@ -26,6 +26,12 @@ footer {
   width: 100%;
 }
 
+#nav {
+  float: right;
+  width: 100%;
+  align-content: flex-end;
+}
+
 /* 
 nav {
   display: flex;

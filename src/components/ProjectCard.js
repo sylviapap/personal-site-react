@@ -1,28 +1,6 @@
-// import React from 'react'
-// import Typography from '@material-ui/core/Typography';
-
-// const ProjectCard = props =>  {
-//   const {imageURL, title, description} = props.project
-//   const src = "images/" + imageURL
-// 	return(
-//     <div className="project-card">
-//       <Typography variant="h3" gutterBottom>
-//         {title}
-//       </Typography>
-//       <img className="project-pic" src={src} alt="project picture"/>
-//       <Typography variant="subtitle1" gutterBottom>
-//         {description}
-//       </Typography>
-//     </div>
-//   )
-// }
-
-// export default ProjectCard
-
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';

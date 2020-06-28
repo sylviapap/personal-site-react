@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import {data} from '../services/data'
-
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 
 class About extends Component {
   render() {
-    const bio = data.bio;
-
     return (
       <section id="about">
         <Typography variant="h2" component="h2" gutterBottom>

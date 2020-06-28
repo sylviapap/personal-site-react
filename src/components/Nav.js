@@ -14,7 +14,7 @@ export default function Nav() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="nav">
       <Grid container spacing={1}>
         <Grid item xs={2}>
           <Link component={RouterLink} to="/"
