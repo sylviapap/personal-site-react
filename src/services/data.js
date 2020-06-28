@@ -70,7 +70,7 @@ export const data = {
       blogURL: "https://dev.to/sylviapap/kill-coronavirus-with-this-simple-game-3l5"
     },
     {
-      title: "Vanilla JavaScript Chatbot",
+      title: "JavaScript Chatbot",
       imageURL: "chatbot1.png",
       websiteURL: "https://sylviapap.github.io/chatbot/",
       description: "An exercise in Javascript fundamentals without the use of any external chatbot libraries",

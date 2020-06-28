@@ -30,8 +30,8 @@ export default function Contact() {
     <List className={classes.root}>
       <ListItem>
         <ListItemAvatar>
-          <Avatar>
-            <MailIcon />
+          <Avatar >
+            <MailIcon/>
           </Avatar>
         </ListItemAvatar>
         <Link href="mailto:sylviapap1@gmail.com" onClick={preventDefault} color="inherit">
