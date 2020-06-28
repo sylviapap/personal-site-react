@@ -13,7 +13,7 @@ class Projects extends Component {
         <Typography variant="h2" component="h2" gutterBottom>
           Projects
         </Typography>
-        {projects.map(project => <ProjectCard key={projects.indexOf(project)} project={project} />)}
+          {projects.map(project => <ProjectCard key={projects.indexOf(project)} project={project} />)}
       </section>
     );
   }

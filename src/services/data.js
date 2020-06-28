@@ -33,12 +33,23 @@ export const data = {
   skills: ["react", "rails"],
   projects: [
     {
-      title: "Racoon", 
-      url: ""
+      title: "Racoon",
+      imageURL: "racoonmap1.png", 
+      websiteURL: "https://racoon-corona-app.herokuapp.com/",
+      description: "COVID-19 map and symptom checker",
+      technology: "React.js, Redux, Thunk, Google Maps Javascript API, Infermedica Symptom Checking API, Ruby on Rails API Backend, JSON Web Tokens, BCrypt, Active Model Serializers, Custom CSS/HTML",
+      githubURL: "https://github.com/sylviapap/final-project-client",
+      backendRepo: "https://github.com/sylviapap/final-project-server",
+      blogURL: "https://dev.to/sylviapap/check-out-my-coding-bootcamp-final-project-1lc1"
     },
     {
       title: "Subscription Manager",
-      url: ""
+      imageURL: "subscribr1.png",
+      websiteURL: "https://subscrbr.herokuapp.com/",
+      description: "Personalized dashboard to track and budget subcriptions to paid services and free trials",
+      technology: "React.js frontend, Ruby on Rails API Backend, JSON Web Tokens, BCrypt, Semantic UI",
+      githubURL: "https://github.com/sylviapap/client-subscription-app",
+      backendRepo: "https://github.com/sylviapap/server-subscription-app"
     }
   ]
 }
