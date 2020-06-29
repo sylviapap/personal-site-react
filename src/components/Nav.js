@@ -7,6 +7,7 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    float: "right"
   }
 }));
 
@@ -14,8 +15,8 @@ export default function Nav() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root} id="nav">
-      <Grid container spacing={1}>
+    <div className={classes.root} >
+      <Grid container spacing={5}>
         <Grid item xs={2}>
           <Link component={RouterLink} to="/"
           variant="body2" color="inherit">
