@@ -4,12 +4,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     margin: "1%"
   }
-}));
+})
 
 export default function Nav() {
   const classes = useStyles();

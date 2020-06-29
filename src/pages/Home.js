@@ -14,21 +14,22 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import ForumIcon from '@material-ui/icons/Forum';
 import TwitterIcon from '@material-ui/icons/Twitter';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+    width: "100%",
+    flexWrap: "wrap"
   },
   paper: {
-    padding: theme.spacing(2),
-    color: theme.palette.text.secondary,
     display: "flex",
-    height: "100%"
+    flexWrap: "wrap",
+    justifyContent: "space-between"  
   },
   media: {
     height: 250,
     width: 250
   }
-}));
+});
 
 export default function Home() {
   const name = data.firstname;
@@ -63,7 +64,7 @@ export default function Home() {
             <Typography variant="h5" component="h2">
               Technical Skills
             </Typography>
-            <CardActions>
+            <CardActions className={classes.paper}>
             <Button variant="outlined" disabled>Ruby</Button>
             <Button variant="outlined" disabled>Rails</Button>
             <Button variant="outlined" disabled>JavaScript</Button>
@@ -81,7 +82,7 @@ export default function Home() {
             <Typography variant="h5" component="h2">
               Find Me On
             </Typography>
-            <CardActions>
+            <CardActions className={classes.paper}>
               <Button
                 variant="contained"
                 className={classes.button}
