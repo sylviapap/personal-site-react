@@ -13,11 +13,15 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import ForumIcon from '@material-ui/icons/Forum';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%'
-  }
+    '& > *': {
+      margin: theme.spacing(1),
+      padding: theme.spacing(1)
+    },
+  },
 }));
 
 export default function Contact() {
@@ -25,6 +29,8 @@ export default function Contact() {
   const email = data.email;
 
   return (
+    <div className={classes.root}>
+    <Paper elevation={3}>
     <Typography variant="h2" component="h2" gutterBottom>
       Contact Me
     <List className={classes.root}>
@@ -45,7 +51,7 @@ export default function Contact() {
             <LinkedInIcon />
           </Avatar>
         </ListItemAvatar>
-        <Link href="https://www.linkedin.com/in/sylvia-pap/" color="inherit">
+        <Link href={data.linkedin} color="inherit">
           <ListItemText primary="LinkedIn" />
         </Link>
       </ListItem>
@@ -56,7 +62,7 @@ export default function Contact() {
             <GitHubIcon />
           </Avatar>
         </ListItemAvatar>
-        <Link href="https://github.com/sylviapap" color="inherit">
+        <Link href={data.github} color="inherit">
           <ListItemText primary="GitHub" />
         </Link>
       </ListItem>
@@ -67,7 +73,7 @@ export default function Contact() {
             <ForumIcon />
           </Avatar>
         </ListItemAvatar>
-        <Link href="https://dev.to/sylviapap" color="inherit">
+        <Link href={data.blog} color="inherit">
           <ListItemText primary="Blog" />
         </Link>
       </ListItem>
@@ -78,11 +84,13 @@ export default function Contact() {
             <TwitterIcon />
           </Avatar>
         </ListItemAvatar>
-        <Link href="https://twitter.com/sylviapapdev" color="inherit">
+        <Link href={data.twitter} color="inherit">
           <ListItemText primary="Twitter" />
         </Link>
       </ListItem>
     </List>
     </Typography>
+    </Paper>
+    </div>
   );
 }
