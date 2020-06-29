@@ -14,13 +14,13 @@ html, body, #root {
   position: absolute;
 }
 
-footer {
+/* footer {
   position: fixed;
   bottom: 0;
   right: 0;
   text-align: right;
   margin: 1%;
-}
+} */
 
 #project-card {
   width: 100%;
