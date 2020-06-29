@@ -26,7 +26,6 @@ export default function Footer() {
         Sylvia Pap
       </Link>{' '}
       {new Date().getFullYear()}
-      {'.'}
     </Typography>
   );
 }
