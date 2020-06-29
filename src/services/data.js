@@ -16,23 +16,6 @@ export const data = {
   linkedin: "https://www.linkedin.com/in/sylvia-pap",
   blog: "https://dev.to/sylviapap",
   twitter: "https://twitter.com/sylviapapdev",
-  social: [
-    {
-      "name":"twitter",
-      "url":"http://twitter.com",
-      "className":"fa fa-twitter"
-    },
-    {
-      "name":"linkedin",
-      "url":"https://www.linkedin.com/in/sylvia-pap",
-      "className":"fa fa-linkedin"
-    },
-    {
-      "name":"github",
-      "url":"http://github.com/sylviapap",
-      "className":"fa fa-github"
-    }
-  ],
   skills: ["react", "rails"],
   projects: [
     {
@@ -90,3 +73,31 @@ export const data = {
     }
   ]
 }
+
+export const contactItems = [
+  {
+    href:"mailto:sylviapap1@gmail.com",
+    icon: "fa fa-envelope",
+    text: data.email
+  },
+  {
+    href: data.linkedin,
+    icon: "fa fa-linkedin",
+    text: "LinkedIn"
+  },
+  {
+    href: data.github,
+    icon: "fa fa-github",
+    text: "GitHub"
+  },
+  {
+    href: data.blog,
+    icon: "fab fa-dev",
+    text: "Blog"
+  },
+  {
+    href: data.twitter,
+    icon: "fa fa-twitter",
+    text: "Twitter"
+  }
+]
