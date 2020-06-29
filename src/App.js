@@ -34,7 +34,7 @@ export default function App() {
   return (
     <div className={classes.root}>
       <CssBaseline />      
-      <Container maxWidth="sm">
+      <Container >
         <Box my={5}>
           <Nav />
           <Route exact path="/" component={Home} />
