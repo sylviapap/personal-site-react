@@ -12,7 +12,11 @@ export const data = {
     state: "CA"
   },
   website: "http://www.sylviapap.com",
-  "social": [
+  github: "http://github.com/sylviapap",
+  linkedin: "https://www.linkedin.com/in/sylvia-pap",
+  blog: "https://dev.to/sylviapap",
+  twitter: "https://twitter.com/sylviapapdev",
+  social: [
     {
       "name":"twitter",
       "url":"http://twitter.com",

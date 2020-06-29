@@ -9,17 +9,28 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import CardActions from '@material-ui/core/CardActions';
+import MailIcon from '@material-ui/icons/Mail';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import ForumIcon from '@material-ui/icons/Forum';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import IconButton from '@material-ui/core/IconButton';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    width: "100%"
+    flexGrow: 1
+  },
+  paper: {
+    padding: theme.spacing(2),
+    color: theme.palette.text.secondary,
+    display: "flex",
+    height: "100%"
   },
   media: {
     height: 250,
     width: 250
-  },
-});
+  }
+}));
 
 export default function Home() {
   const name = data.firstname;
@@ -29,8 +40,9 @@ export default function Home() {
   const classes = useStyles();
 
   return (
-    <Grid container spacing={5}>
-      <Card className={classes.root}>
+    <Grid container spacing={5} className={classes.root}>
+      <Grid item xs={12}>
+      <Card className={classes.paper}>
         <CardMedia
           className={classes.media}
           image={profilepic}
@@ -41,30 +53,74 @@ export default function Home() {
             Hi, I'm {name}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            I'm a {description}
+            {description}
           </Typography>
         </CardContent>
       </Card>
+      </Grid>
 
-      <Card className={classes.root}>
-        <CardContent>
-          <Typography className={classes.title} color="textSecondary" gutterBottom>
-            Technical Skills
-          </Typography>
-          <Typography variant="h5" component="h2">
-            react
-          </Typography>
-          <Typography className={classes.pos} color="textSecondary">
-            ruby
-          </Typography>
-          <Typography variant="body2" component="p">
-            js
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small">Learn More</Button>
-        </CardActions>
-      </Card>
+      <Grid item xs={6}>
+        <Card className={classes.paper}>
+          <CardContent>
+            <Typography variant="h5" component="h2">
+              Technical Skills
+            </Typography>
+            <CardActions>
+            <Button variant="outlined" disabled>Ruby</Button>
+            <Button variant="outlined" disabled>Rails</Button>
+            <Button variant="outlined" disabled>JavaScript</Button>
+            <Button variant="outlined" disabled>React</Button>
+            <Button variant="outlined" disabled>Redux</Button>
+            <Button variant="outlined" disabled>Python</Button>
+            </CardActions>
+          </CardContent>
+        </Card>
+      </Grid>
+
+      <Grid item xs={6}>
+        <Card className={classes.paper}>
+          <CardContent>
+            <Typography variant="h5" component="h2">
+              Find Me On
+            </Typography>
+            <CardActions>
+              <Button
+                variant="contained"
+                className={classes.button}
+                startIcon={<GitHubIcon />}
+                href={data.github}
+              >
+                GitHub
+              </Button>
+              <Button
+                variant="contained"
+                className={classes.button}
+                startIcon={<LinkedInIcon />}
+                href={data.linkedin}
+              >
+                Linkedin
+              </Button>
+              <Button
+                variant="contained"
+                className={classes.button}
+                startIcon={<TwitterIcon />}
+                href={data.twitter}
+              >
+                Twitter
+              </Button>
+              <Button
+                variant="contained"
+                className={classes.button}
+                startIcon={<ForumIcon />}
+                href={data.blog}
+              >
+                Dev.To
+              </Button>
+            </CardActions>
+          </CardContent>
+        </Card>
+      </Grid>
+
     </Grid>
   );
 }
