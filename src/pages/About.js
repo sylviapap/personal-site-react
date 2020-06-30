@@ -33,10 +33,19 @@ export default function About() {
     I am a recent graduate of <Link className={classes.links} underline="none" href="https://flatironschool.com/" >Flatiron School</Link>'s Full Stack Immersive Software Engineering <Link className={classes.links} underline="none" href="https://flatironschool.com/career-courses/coding-bootcamp/san-francisco">program</Link>, voted #1 Coding Bootcamp by <Link className={classes.links} underline="none" href="https://www.coursereport.com/best-coding-bootcamps">Course Report</Link>.
     <br></br>
     <br></br>
-    In college, I studied philosophy, psychology, economics, and some math. I worked in Washington, D.C. as a paralegal, went to London for a master's degree in International Relations, and then Mexico City to teach. I thought I'd apply to law school, but realized while studying for the LSAT that I missed logic puzzles and proofs, which brought me back to computer science.
+    I graduated from the University of Chicago in 2017, having studied philosophy, psychology, economics, and some math. I worked in Washington, D.C. as a paralegal, went to the London School of Economics for a Master's degree in International Relations, and then Mexico City to teach. 
     <br></br>
     <br></br>
-    When not coding, you can find me with my dogs, traveling, playing piano, kickboxing, and/or attempting to learn about coding through <Link className={classes.links} underline="none" href="https://www.instagram.com/p/B-AJtycgYKU/?igshid=12f3s8qalj71s">memes</Link>. 
+    Like many, I can trace my love of coding back to learning HTML as a kid on Neopets and MySpace, but never thought I could make it a career, or felt like I was too far behind.
+    <br></br>
+    <br></br>
+    But, in late 2019, while studying for the LSAT, I realized I enjoyed logic puzzles and proofs more than law. This brought me back to my long-standing interest in computer science, and as I learned more about coding bootcamps, I started to think maybe it wasn't that unrealistic of a goal.
+    <br></br>
+    <br></br>
+    In January 2020, I moved back to San Francisco to commit to this career change, and have been loving it ever since.
+    <br></br>
+    <br></br>
+    Other passions include my dogs, traveling, playing piano, kickboxing, and attempting to learn programming through <Link className={classes.links} underline="none" href="https://www.instagram.com/p/B-AJtycgYKU/?igshid=12f3s8qalj71s">memes</Link>. 
     </Typography>
     </Paper>
   </div>
