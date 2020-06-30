@@ -8,19 +8,20 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Icon from '@material-ui/core/Icon';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   root: {
     flexGrow: 1,
   },
   paper: {
-    padding: theme.spacing(2),
-    color: theme.palette.text.secondary,
+    padding: "8px",
     display: "flex",
+    width: "100%",
+    color: "black",
   },
   text: {
     margin: "8px"
   }
-}));
+})
 
 export default function Contact() {
   const classes = useStyles();

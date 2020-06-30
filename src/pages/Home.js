@@ -13,12 +13,13 @@ import Icon from '@material-ui/core/Icon';
 
 const useStyles = makeStyles({
   root: {
-    display: 'flex',
+    display: 'flex'
   },
   paper: {
     display: "flex",
     flexWrap: "wrap",
-    justifyContent: "space-between"  
+    justifyContent: "space-between",
+ 
   },
   media: {
     width: 250,
@@ -30,7 +31,8 @@ const useStyles = makeStyles({
     border: "thin",
     borderStyle: "dotted",
     borderRadius: "5px",
-    padding: "1%"
+    padding: "5px",
+    margin: "auto"
   }
 });
 
