@@ -16,7 +16,14 @@ export const data = {
   linkedin: "https://www.linkedin.com/in/sylvia-pap",
   blog: "https://dev.to/sylviapap",
   twitter: "https://twitter.com/sylviapapdev",
-  skills: ["react", "rails"],
+  skills: [
+    "React",
+    "Redux",
+    "JavaScript",
+    "Rails",
+    "Ruby",
+    "Python"
+  ],
   projects: [
     {
       title: "Racoon",

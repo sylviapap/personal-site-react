@@ -14,12 +14,8 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     padding: theme.spacing(2),
-    textAlign: 'center',
     color: theme.palette.text.secondary,
-    alignContent: "center",
-    alignItems: "center",
     display: "flex",
-    justifyContent: "space-evenly"
   },
   text: {
     margin: "8px"
@@ -32,7 +28,7 @@ export default function Contact() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3} alignItems="center" alignContent="center" justify="space-evenly" xs={12} >
+      <Grid container spacing={3} justify="space-evenly" xs={12} >
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <Typography variant="h2" component="h2" gutterBottom>

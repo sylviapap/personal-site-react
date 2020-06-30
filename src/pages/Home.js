@@ -9,16 +9,13 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import CardActions from '@material-ui/core/CardActions';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import ForumIcon from '@material-ui/icons/Forum';
-import TwitterIcon from '@material-ui/icons/Twitter';
 import Icon from '@material-ui/core/Icon';
 
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     width: "100%",
+    height: "100%",
     flexWrap: "wrap"
   },
   paper: {
@@ -29,6 +26,14 @@ const useStyles = makeStyles({
   media: {
     height: 250,
     width: 250
+  },
+  skills: {
+    fontVariant: "all-small-caps",
+    fontSize: "large",
+    border: "thin",
+    borderStyle: "dotted",
+    borderRadius: "5px",
+    padding: "1%"
   }
 });
 
@@ -46,7 +51,7 @@ export default function Home() {
         <CardMedia
           className={classes.media}
           image={profilepic}
-          title="me"
+          title="hi"
         />
         <CardContent>
           <Typography gutterBottom variant="h2" component="h2">
@@ -66,12 +71,7 @@ export default function Home() {
               Technical Skills
             </Typography>
             <CardActions className={classes.paper}>
-            <Button variant="outlined" disabled>Ruby</Button>
-            <Button variant="outlined" disabled>Rails</Button>
-            <Button variant="outlined" disabled>JavaScript</Button>
-            <Button variant="outlined" disabled>React</Button>
-            <Button variant="outlined" disabled>Redux</Button>
-            <Button variant="outlined" disabled>Python</Button>
+              {data.skills.map(skill => <span className={classes.skills}>{skill}</span>)}
             </CardActions>
           </CardContent>
         </Card>
