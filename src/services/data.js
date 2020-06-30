@@ -76,8 +76,8 @@ export const data = {
 
 export const contactItems = [
   {
-    href:"mailto:sylviapap1@gmail.com",
-    icon: "fa fa-envelope",
+    href:`mailto:${data.email}`,
+    icon: "fa fa-google",
     text: data.email
   },
   {

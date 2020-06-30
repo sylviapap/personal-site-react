@@ -1,4 +1,4 @@
-import {data} from '../services/data'
+import {data, contactItems} from '../services/data'
 
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
@@ -13,6 +13,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import ForumIcon from '@material-ui/icons/Forum';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import Icon from '@material-ui/core/Icon';
 
 const useStyles = makeStyles({
   root: {
@@ -83,38 +84,13 @@ export default function Home() {
               Find Me On
             </Typography>
             <CardActions className={classes.paper}>
-              <Button
+              {contactItems.map(item => <Button
                 variant="contained"
                 className={classes.button}
-                startIcon={<GitHubIcon />}
-                href={data.github}
-              >
-                GitHub
-              </Button>
-              <Button
-                variant="contained"
-                className={classes.button}
-                startIcon={<LinkedInIcon />}
-                href={data.linkedin}
-              >
-                Linkedin
-              </Button>
-              <Button
-                variant="contained"
-                className={classes.button}
-                startIcon={<TwitterIcon />}
-                href={data.twitter}
-              >
-                Twitter
-              </Button>
-              <Button
-                variant="contained"
-                className={classes.button}
-                startIcon={<ForumIcon />}
-                href={data.blog}
-              >
-                Dev.To
-              </Button>
+                startIcon={<Icon className={item.icon}/>}
+                href={item.href}
+              />)}
+              
             </CardActions>
           </CardContent>
         </Card>

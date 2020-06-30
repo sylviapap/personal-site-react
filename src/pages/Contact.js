@@ -32,7 +32,7 @@ export default function Contact() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3} alignItems="center" alignContent="center" >
+      <Grid container spacing={3} alignItems="center" alignContent="center" justify="space-evenly" xs={12} >
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <Typography variant="h2" component="h2" gutterBottom>
@@ -42,7 +42,7 @@ export default function Contact() {
         </Grid>
         {items.map(item => <Grid item>
           <Paper className={classes.paper}>
-            <Link className={classes.paper} href={item.href} color="inherit">
+            <Link className={classes.paper} href={item.href} underline="none">
               <Avatar><Icon className={item.icon} /></Avatar>
             <Typography variant="body1" className={classes.text} gutterBottom>  
             {item.text}
