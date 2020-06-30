@@ -13,10 +13,7 @@ import Icon from '@material-ui/core/Icon';
 
 const useStyles = makeStyles({
   root: {
-    flexGrow: 1,
-    width: "100%",
-    height: "100%",
-    flexWrap: "wrap"
+    display: 'flex',
   },
   paper: {
     display: "flex",
@@ -24,8 +21,8 @@ const useStyles = makeStyles({
     justifyContent: "space-between"  
   },
   media: {
+    width: 250,
     height: 250,
-    width: 250
   },
   skills: {
     fontVariant: "all-small-caps",
@@ -46,22 +43,22 @@ export default function Home() {
 
   return (
     <Grid container spacing={5} className={classes.root}>
-      <Grid item xs={12}>
-      <Card className={classes.paper}>
-        <CardMedia
-          className={classes.media}
-          image={profilepic}
-          title="hi"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h2" component="h2">
-            Hi, I'm {name}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {description}
-          </Typography>
-        </CardContent>
-      </Card>
+      <Grid item xs={12} >
+        <Card className={classes.root}>
+            <CardMedia
+              className={classes.media}
+              image={profilepic}
+              title="hi"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h2" component="h2">
+                Hi, I'm {name}
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                {description}
+              </Typography>
+            </CardContent>
+        </Card>
       </Grid>
 
       <Grid item xs={6}>
