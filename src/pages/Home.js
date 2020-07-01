@@ -90,6 +90,7 @@ export default function Home() {
                 startIcon={<Icon className={item.icon}/>}
                 href={item.href}
                 key={contactItems.indexOf(item)}
+                aria-label={item.text}
               />)}
               
             </CardActions>
