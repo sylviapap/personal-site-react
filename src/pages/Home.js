@@ -40,6 +40,7 @@ export default function Home() {
   const name = data.firstname;
   const description = data.description;
   const profilepic= "images/"+data.image;
+  const skills = data.skills
 
   const classes = useStyles();
 
@@ -70,7 +71,7 @@ export default function Home() {
               Technical Skills
             </Typography>
             <CardActions className={classes.paper}>
-              {data.skills.map(skill => <span className={classes.skills}>{skill}</span>)}
+              {skills.map(skill => <span key={skills.indexOf(skill)} className={classes.skills}>{skill}</span>)}
             </CardActions>
           </CardContent>
         </Card>
@@ -88,6 +89,7 @@ export default function Home() {
                 className={classes.button}
                 startIcon={<Icon className={item.icon}/>}
                 href={item.href}
+                key={contactItems.indexOf(item)}
               />)}
               
             </CardActions>
