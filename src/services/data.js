@@ -28,7 +28,7 @@ export const data = {
     {
       title: "Racoon",
       imageURL: "racoonmap1.png", 
-      websiteURL: "https://racoon-corona-app.herokuapp.com/",
+      websiteURL: "https://racoon.digital/",
       description: "COVID-19 map and symptom checker",
       technology: "React.js, Redux, Thunk, Google Maps Javascript API, Infermedica Symptom Checking API, Ruby on Rails API Backend, JSON Web Tokens, BCrypt, Active Model Serializers, Custom CSS/HTML",
       githubURL: "https://github.com/sylviapap/final-project-client",
