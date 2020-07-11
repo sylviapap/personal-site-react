@@ -46,7 +46,7 @@ export const data = {
     {
       title: "Subscription Manager",
       imageURL: "subscribr1.png",
-      websiteURL: "https://subscrbr.herokuapp.com/",
+      websiteURL: "https://subscribr.netlify.app/",
       description: "Personalized dashboard to track and budget subcriptions to paid services and free trials",
       technology: "React.js frontend, Ruby on Rails API Backend, JSON Web Tokens, BCrypt, Semantic UI",
       githubURL: "https://github.com/sylviapap/client-subscription-app",
