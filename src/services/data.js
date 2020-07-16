@@ -31,8 +31,8 @@ export const data = {
       websiteURL: "https://racoon.digital/",
       description: "COVID-19 map and symptom checker",
       technology: "React.js, Redux, Thunk, Google Maps Javascript API, Infermedica Symptom Checking API, Ruby on Rails API Backend, JSON Web Tokens, BCrypt, Active Model Serializers, Custom CSS/HTML",
-      githubURL: "https://github.com/sylviapap/final-project-client",
-      backendRepo: "https://github.com/sylviapap/final-project-server",
+      githubURL: "https://github.com/sylviapap/racoon-client",
+      backendRepo: "https://github.com/sylviapap/racoon-server",
       blogURL: "https://dev.to/sylviapap/check-out-my-coding-bootcamp-final-project-1lc1"
     },
     {
