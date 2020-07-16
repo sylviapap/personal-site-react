@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Icon from '@material-ui/core/Icon';
 
 const useStyles = makeStyles({
   root: {
@@ -45,7 +46,7 @@ const ProjectCard = props =>  {
         </Button> : null}
         
         <Button size="small" color="primary" href={githubURL}>
-          GitHub
+          <Icon className="fa fa-github"/>
         </Button>
 
         {blogURL ? <Button size="small" color="primary" href={blogURL}>
