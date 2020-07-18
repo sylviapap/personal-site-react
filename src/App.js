@@ -4,8 +4,6 @@ import './App.css';
 import Nav from './components/Nav';
 import Home from './pages/Home';
 import Footer from './components/Footer';
-import About from './pages/About';
-import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 
 import Container from '@material-ui/core/Container';
