@@ -86,13 +86,13 @@ export default function Home() {
         <Card className={classes.root}>
             <CardContent>
               <Typography variant="body2" gutterBottom>
-              Previously, I studied <strong>philosophy, psychology, economics</strong>, and some <strong>math</strong>. I worked as a paralegal, got a degree in <strong>International Relations</strong>, and tutored high school students in <strong>Mexico City</strong>. 
+              Previously, I studied <strong>philosophy, psychology, economics, math,</strong> and <strong>international relations.</strong> I've worked in <strong>finance, law</strong>, and <strong>education</strong>. 
               <br></br>
               <br></br>
-              I've always been interested in <strong>computer science</strong>, and when I learned more about bootcamps, I decided to make the switch. I moved back to <strong>San Francisco</strong> to pursue it full time, and have been loving it ever since.
+              I've always been interested in <strong>computer science</strong>, and when I recently learned more about coding bootcamps, I decided to make the switch. I moved back to <strong>San Francisco</strong> to pursue it full time, and have been loving it ever since.
               <br></br>
               <br></br>
-              Other passions include my dogs, piano, kickboxing, and attempting to learn programming through <Link className={classes.links} underline="none" href="https://www.instagram.com/p/B-AJtycgYKU/?igshid=12f3s8qalj71s">memes</Link>.
+              Other passions: dogs, piano, kickboxing, and attempting to learn programming through <Link className={classes.links} underline="none" href="https://www.instagram.com/p/B-AJtycgYKU/?igshid=12f3s8qalj71s">memes</Link>.
                 </Typography>
             </CardContent>
         </Card>
