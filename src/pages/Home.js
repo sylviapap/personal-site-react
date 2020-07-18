@@ -14,14 +14,9 @@ import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles({
   root: {
-    display: 'flex'
-  },
-  row: {
     display: 'flex',
-    flexDirection: "row",
     flexWrap: "wrap",
-    justifyContent: "space-around",
-    alignItems: "center"
+    justifyContent: "space-between"
   },
   paper: {
     display: "flex",
@@ -32,6 +27,8 @@ const useStyles = makeStyles({
   media: {
     width: "100%",
     height: "100%",
+    minWidth: "200px",
+    minHeight: "250px",
   },
   skills: {
     fontVariant: "all-small-caps",
@@ -64,7 +61,7 @@ export default function Home() {
     <Grid container spacing={5} className={classes.root}>
       <Grid item xs={12}>
         <Card>
-          <Grid container spacing={1} className={classes.root}>
+          <Grid container className={classes.root}>
           <Grid item xs={4}>
             <CardMedia
               className={classes.media}
