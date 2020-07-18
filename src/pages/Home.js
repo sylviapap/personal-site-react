@@ -28,8 +28,8 @@ const useStyles = makeStyles({
   media: {
     width: "100%",
     height: "100%",
-    minWidth: "200px",
     minHeight: "250px",
+    maxWidth: "250px",
   },
   skills: {
     fontVariant: "all-small-caps",
@@ -63,7 +63,7 @@ export default function Home() {
       <Grid item xs={12}>
         <Card>
           <Grid container className={classes.root}>
-          <Grid item xs={4}>
+          <Grid item xs={6}>
             <CardMedia
               className={classes.media}
               image={profilepic}
