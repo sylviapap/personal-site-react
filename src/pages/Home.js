@@ -18,7 +18,8 @@ const useStyles = makeStyles({
   paper: {
     display: "flex",
     flexWrap: "wrap",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
+    alignItems: "center"
  
   },
   media: {
@@ -32,7 +33,11 @@ const useStyles = makeStyles({
     borderStyle: "dotted",
     borderRadius: "5px",
     padding: "5px",
-    margin: "auto"
+    margin: "5px"
+  },
+  items: {
+    margin: "5px 5px 5px 8px",
+    padding: "5px"  
   }
 });
 
@@ -51,7 +56,6 @@ export default function Home() {
             <CardMedia
               className={classes.media}
               image={profilepic}
-              title="hi"
             />
             <CardContent>
               <Typography gutterBottom variant="h2" component="h2">
@@ -86,7 +90,7 @@ export default function Home() {
             <CardActions className={classes.paper}>
               {contactItems.map(item => <Button
                 variant="contained"
-                className={classes.button}
+                className={classes.items}
                 startIcon={<Icon className={item.icon}/>}
                 href={item.href}
                 key={contactItems.indexOf(item)}
