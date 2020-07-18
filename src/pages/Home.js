@@ -55,7 +55,6 @@ const useStyles = makeStyles({
 
 export default function Home() {
   const name = data.firstname;
-  const description = data.description;
   const profilepic= "images/"+data.image;
   const skills = data.skills
 
