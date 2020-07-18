@@ -65,7 +65,7 @@ export default function Home() {
       <Grid item xs={12}>
         <Card>
           <Grid container spacing={1} className={classes.root}>
-          <Grid item xs={6}>
+          <Grid item xs={4}>
             <CardMedia
               className={classes.media}
               image={profilepic}
