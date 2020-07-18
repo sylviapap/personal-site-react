@@ -24,12 +24,6 @@ export default function Nav() {
           </Link>
         </Grid>
         <Grid item xs={2}>
-          <Link component={RouterLink} to="/about"
-          variant="body2" color="inherit">
-          About
-          </Link>
-        </Grid>
-        <Grid item xs={2}>
           <Link component={RouterLink} to="/projects"
           variant="body2" color="inherit">
           Projects
