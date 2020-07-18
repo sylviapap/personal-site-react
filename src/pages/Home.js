@@ -10,21 +10,28 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import CardActions from '@material-ui/core/CardActions';
 import Icon from '@material-ui/core/Icon';
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles({
   root: {
     display: 'flex'
+  },
+  row: {
+    display: 'flex',
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+    alignItems: "center"
   },
   paper: {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-around",
     alignItems: "center"
- 
   },
   media: {
-    width: 250,
-    height: 250,
+    width: "100%",
+    height: "100%",
   },
   skills: {
     fontVariant: "all-small-caps",
@@ -38,7 +45,12 @@ const useStyles = makeStyles({
   items: {
     margin: "5px 5px 5px 8px",
     padding: "5px"  
-  }
+  },
+  links: {
+    color: "black",
+    borderBottomStyle: "dotted",
+    border: "thin",
+  },
 });
 
 export default function Home() {
@@ -51,19 +63,40 @@ export default function Home() {
 
   return (
     <Grid container spacing={5} className={classes.root}>
-      <Grid item xs={12} >
-        <Card className={classes.root}>
+      <Grid item xs={12}>
+        <Card>
+          <Grid container spacing={1} className={classes.root}>
+          <Grid item xs={6}>
             <CardMedia
               className={classes.media}
               image={profilepic}
-            />
+            /></Grid>
+            <Grid item xs={6}>
             <CardContent>
               <Typography gutterBottom variant="h2" component="h2">
                 Hi, I'm {name}
               </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                {description}
-              </Typography>
+              <Typography variant="body2" gutterBottom>
+                I am a Software Engineer and recent graduate of Flatiron School's Full Stack Web Development <Link className={classes.links} underline="none" href="https://flatironschool.com/career-courses/coding-bootcamp/san-francisco">program</Link>.
+                </Typography>
+            </CardContent>
+            </Grid>
+            </Grid>
+        </Card>
+      </Grid>
+
+      <Grid item xs={12} >
+        <Card className={classes.root}>
+            <CardContent>
+              <Typography variant="body2" gutterBottom>
+              I graduated from the <strong>University of Chicago</strong> in <strong>2017</strong>, having studied philosophy, psychology, economics, and some math. I worked in <strong>Washington, D.C.</strong> as a paralegal, went to the <strong>London School of Economics</strong> for a Master's degree in <strong>International Relations</strong>, and then <strong>Mexico City</strong> to teach. 
+    <br></br>
+    <br></br>
+ I've always been interested in <strong>computer science</strong>, and as I learned more about coding bootcamps, I started to think maybe it wasn't an unrealistic career switch. I moved back to <strong>San Francisco</strong> to pursue it full time, and have been loving it ever since.
+    <br></br>
+    <br></br>
+    Other passions include my dogs, traveling, piano, kickboxing, and attempting to learn programming through <Link className={classes.links} underline="none" href="https://www.instagram.com/p/B-AJtycgYKU/?igshid=12f3s8qalj71s">memes</Link>.
+                </Typography>
             </CardContent>
         </Card>
       </Grid>
