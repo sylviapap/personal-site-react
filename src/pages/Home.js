@@ -22,7 +22,8 @@ const useStyles = makeStyles({
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-around",
-    alignItems: "center"
+    alignItems: "center",
+    minHeight: "65px"
   },
   media: {
     width: "100%",
@@ -37,7 +38,7 @@ const useStyles = makeStyles({
     borderStyle: "dotted",
     borderRadius: "5px",
     padding: "5px",
-    margin: "5px"
+    margin: "5px 5px 5px 8px"
   },
   items: {
     margin: "5px 5px 5px 8px",
@@ -114,7 +115,7 @@ export default function Home() {
         <Card className={classes.paper}>
           <CardContent>
             <Typography variant="h5" component="h2">
-              Find Me On
+              Contact Me
             </Typography>
             <CardActions className={classes.paper}>
               {contactItems.map(item => <Button

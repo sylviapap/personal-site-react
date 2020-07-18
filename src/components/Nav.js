@@ -30,12 +30,6 @@ export default function Nav() {
           </Link>
         </Grid>
         <Grid item xs={2}>
-          <Link component={RouterLink} to="/contact"
-          variant="body2" color="inherit">
-          Contact
-          </Link> 
-        </Grid>
-        <Grid item xs={2}>
           <Link href="resume.pdf"
           variant="body2" color="inherit">
           Resume

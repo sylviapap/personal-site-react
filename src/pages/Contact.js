@@ -31,11 +31,9 @@ export default function Contact() {
     <div className={classes.root}>
       <Grid container spacing={3} justify="space-evenly" xs={12} >
         <Grid item xs={12}>
-          <Paper className={classes.paper}>
             <Typography variant="h2" component="h2" gutterBottom>
               Contact Me
             </Typography>
-          </Paper>
         </Grid>
         {items.map(item => <Grid item>
           <Paper className={classes.paper}>
