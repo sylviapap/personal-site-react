@@ -1,5 +1,4 @@
 import {data, contactItems} from '../services/data'
-
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -55,33 +54,40 @@ export default function Home() {
   const name = data.firstname;
   const profilepic= "images/"+data.image;
   const skills = data.skills
-
   const classes = useStyles();
 
   return (
     <Grid container spacing={5} className={classes.root}>
+
+{/* Begin main/profile pic card */}
       <Grid item xs={12}>
         <Card>
+          {/* Container within the card for flex grid */}
           <Grid container className={classes.root}>
-          <Grid item xs={6}>
-            <CardMedia
-              className={classes.media}
-              image={profilepic}
-            /></Grid>
+            {/* Profile Picture */}
             <Grid item xs={6}>
-            <CardContent>
-              <Typography gutterBottom variant="h2" component="h2">
-                Hi, I'm {name}
-              </Typography>
-              <Typography variant="body2" gutterBottom>
-                I am a Software Engineer and recent graduate of Flatiron School's Full Stack Web Development <Link className={classes.links} underline="none" href="https://flatironschool.com/career-courses/coding-bootcamp/san-francisco">program</Link>.
+              <CardMedia
+                className={classes.media}
+                image={profilepic}
+              />
+            </Grid>
+            {/* Card title and text */}
+            <Grid item xs={6}>
+              <CardContent>
+                <Typography gutterBottom variant="h2" component="h2">
+                  Hi, I'm {name}
                 </Typography>
-            </CardContent>
+                <Typography variant="body2" gutterBottom>
+                  I am a Software Engineer and recent graduate of Flatiron School's Full Stack Web Development <Link className={classes.links} underline="none" href="https://flatironschool.com/career-courses/coding-bootcamp/san-francisco">program</Link>.
+                </Typography>
+              </CardContent>
             </Grid>
-            </Grid>
+          </Grid>
         </Card>
       </Grid>
+{/* End main card */}
 
+{/* Begin 'about me' card */}
       <Grid item xs={12} >
         <Card className={classes.root}>
             <CardContent>
@@ -96,8 +102,10 @@ export default function Home() {
                 </Typography>
             </CardContent>
         </Card>
-      </Grid>
+      </Grid> 
+{/* End about me */}
 
+{/* Begin skills card */}
       <Grid item xs={6}>
         <Card className={classes.paper}>
           <CardContent>
@@ -110,7 +118,9 @@ export default function Home() {
           </CardContent>
         </Card>
       </Grid>
+{/* End skills */}
 
+{/* Begin contact items card */}
       <Grid item xs={6}>
         <Card className={classes.paper}>
           <CardContent>
@@ -126,12 +136,22 @@ export default function Home() {
                 key={contactItems.indexOf(item)}
                 aria-label={item.text}
               />)}
-              
             </CardActions>
           </CardContent>
         </Card>
       </Grid>
+{/* End contact items */}
 
-    </Grid>
+      <Grid item xs={12} >
+        <Card className={classes.root}>
+            <CardContent>
+              <Typography variant="body2" gutterBottom>
+              Blog Posts <Link className={classes.links} underline="none" href="https://dev.to">link</Link>
+              </Typography>
+            </CardContent>
+        </Card>
+      </Grid>
+
+    </Grid> // End container
   );
 }
