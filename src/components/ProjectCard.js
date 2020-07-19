@@ -11,7 +11,9 @@ import Icon from '@material-ui/core/Icon';
 const useStyles = makeStyles({
   root: {
     width: "100%",
-    "margin-bottom": "5%"
+    height: "100%",
+    display: 'flex',
+    flexWrap: "wrap"
   },
 });
 
