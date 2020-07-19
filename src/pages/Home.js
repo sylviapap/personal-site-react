@@ -1,4 +1,4 @@
-import {data, contactItems} from '../services/data'
+import {data, contactItems, blogPosts} from '../services/data'
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -107,7 +107,7 @@ export default function Home() {
 
 {/* Begin skills card */}
       <Grid item xs={6}>
-        <Card className={classes.paper}>
+        <Card className={classes.root}>
           <CardContent>
             <Typography variant="h5" component="h2">
               Technical Skills
@@ -122,7 +122,7 @@ export default function Home() {
 
 {/* Begin contact items card */}
       <Grid item xs={6}>
-        <Card className={classes.paper}>
+        <Card className={classes.root}>
           <CardContent>
             <Typography variant="h5" component="h2">
               Contact Me
@@ -145,9 +145,23 @@ export default function Home() {
       <Grid item xs={12} >
         <Card className={classes.root}>
             <CardContent>
-              <Typography variant="body2" gutterBottom>
-              Blog Posts <Link className={classes.links} underline="none" href="https://dev.to">link</Link>
+              <Typography variant="h5" component="h2">
+              Blog Posts
               </Typography>
+              <CardActions className={classes.paper}>
+              <ul>
+              {blogPosts.map(item => <li key={blogPosts.indexOf(item)}>
+                <Link
+                className={classes.links} 
+                underline="none"
+                href={item.href}
+                >
+                  {item.title}
+                </Link>
+              </li>
+              )}
+              </ul>
+            </CardActions>
             </CardContent>
         </Card>
       </Grid>

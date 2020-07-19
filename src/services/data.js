@@ -108,3 +108,18 @@ export const contactItems = [
     text: "Twitter"
   }
 ]
+
+export const blogPosts = [
+  {
+    href: "https://dev.to/sylviapap/how-to-make-your-own-no-template-personal-website-with-react-material-ui-and-netlify-pij",
+    title: "How to make your own (no template) personal website with React, Material UI, and Netlify"
+  },
+  {
+    href: "https://dev.to/sylviapap/bcrypt-explained-4k5c",
+    title: "BCrypt Explained"
+  },
+  {
+    href: "https://dev.to/sylviapap/make-a-simple-chatbot-with-javascript-1gc",
+    title: "Make a Simple Chatbot with JavaScript!"
+  },
+]
