@@ -51,7 +51,6 @@ const useStyles = makeStyles({
 });
 
 export default function Home() {
-  const name = data.firstname;
   const profilepic= "images/"+data.image;
   const skills = data.skills
   const classes = useStyles();
@@ -75,10 +74,10 @@ export default function Home() {
             <Grid item xs={6}>
               <CardContent>
                 <Typography gutterBottom variant="h2" component="h2">
-                  Hi, I'm {name}
+                  Hi, I'm Sylvia
                 </Typography>
                 <Typography variant="body2" gutterBottom>
-                  I am a Software Engineer and recent graduate of Flatiron School's Full Stack Web Development <Link className={classes.links} underline="none" href="https://flatironschool.com/career-courses/coding-bootcamp/san-francisco">program</Link>.
+                  Currently a Software Engineer, formerly an aspiring lawyer
                 </Typography>
               </CardContent>
             </Grid>
@@ -92,13 +91,13 @@ export default function Home() {
         <Card className={classes.root}>
             <CardContent>
               <Typography variant="body2" gutterBottom>
-              Previously, I studied <strong>philosophy, psychology, economics, math,</strong> and <strong>international relations.</strong> I've worked in <strong>finance, law</strong>, and <strong>education</strong>. 
+              I've studied <strong>philosophy, psychology, economics, math,</strong> and <strong>international relations</strong>, and I've worked in <strong>finance, law</strong>, and <strong>education</strong>. 
               <br></br>
               <br></br>
-              I've always been interested in <strong>computer science</strong>, and when I recently learned more about coding bootcamps, I decided to make the switch. I moved back to <strong>San Francisco</strong> to pursue it full time, and have been loving it ever since.
+              I learned to <strong>code</strong> in 4th grade, making web pages on Neopets with <strong>HTML</strong>. I've investigated many other interests since then, but I realized while studying for the LSAT that I only really enjoyed the logic puzzles section, and was reminded of everything I love about <strong>computer science</strong>. So I moved back to <strong>San Francisco</strong> to pursue Flatiron School's Full Stack Web Development <Link className={classes.links} underline="none" href="https://flatironschool.com/career-courses/coding-bootcamp/san-francisco">immersive</Link>, and can finally say I've found my dream job.
               <br></br>
               <br></br>
-              Other passions: dogs, piano, kickboxing, and attempting to learn programming through <Link className={classes.links} underline="none" href="https://www.instagram.com/p/B-AJtycgYKU/?igshid=12f3s8qalj71s">memes</Link>.
+              Other passions: dogs, piano, kickboxing, travel, weird food, and <Link className={classes.links} underline="none" href="https://www.instagram.com/p/B-AJtycgYKU/?igshid=12f3s8qalj71s">memes</Link>.
                 </Typography>
             </CardContent>
         </Card>
