@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <Typography variant="body2" color="textSecondary">
       {'Copyright © '}
-      <Link color="inherit" href="https://sylviapap.com/">
+      <Link className={classes.links} href="https://sylviapap.com/" underline="none">
         Sylvia Pap
       </Link>{' '}
       {new Date().getFullYear()}
