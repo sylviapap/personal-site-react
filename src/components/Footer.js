@@ -18,7 +18,7 @@ export default function Footer() {
       <Link color="inherit" href="https://sylviapap.com/">
         Sylvia Pap
       </Link>{' '}
-      {new Date().getFullYear()} | Background: <Link href="https://unsplash.com/photos/RsRTIofe0HE" className={classes.links}>Unsplash</Link>
+      {new Date().getFullYear()}
     </Typography>
   );
 }
