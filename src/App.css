@@ -1,6 +1,12 @@
 body {
-  /* background: linear-gradient(#ccafac 20%, #bebbcc, #9ba6c9, #8d95b8, #ccafac ); */
+  background: linear-gradient(#ccafac 20%, #bebbcc, #9ba6c9, #8d95b8, #ccafac );
+}
+
+/* Keeping this here as a comment for potential background image option
+
+body {
   background-image: url(/images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-}
+} 
+*/
