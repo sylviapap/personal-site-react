@@ -49,8 +49,8 @@ const useStyles = makeStyles({
 });
 
 export default function Home() {
-  const profilepic= "images/"+data.image;
-  const skills = data.skills
+  const {skills, firstName, headline, profilePic} = data
+  const profilepic= "images/" + profilePic;
   const classes = useStyles();
 
   return (
@@ -72,10 +72,10 @@ export default function Home() {
             <Grid item >
               <CardContent>
                 <Typography gutterBottom variant="h2" component="h2">
-                  Hi, I'm Sylvia
+                  Hi, I'm {firstName}
                 </Typography>
                 <Typography variant="body2" gutterBottom>
-                  Current Software Engineer, former Aspiring-Lawyer
+                  {headline}
                 </Typography>
               </CardContent>
             </Grid>
