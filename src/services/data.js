@@ -26,8 +26,8 @@ export const data = {
       title: "Racoon",
       imageURL: "racoonmap1.png", 
       websiteURL: "https://racoon.digital/",
-      description: "COVID-19 map and symptom checker",
-      technology: "React.js, Redux, Thunk, Google Maps Javascript API, Infermedica Symptom Checking API, Ruby on Rails API Backend, JSON Web Tokens, BCrypt, Active Model Serializers, Custom CSS/HTML",
+      description: "COVID-19 diagnostic reporting service",
+      technology: "React.js • Redux • Thunk • Google Maps Javascript API • Infermedica Symptom Checking API • Ruby on Rails API Backend • JSON Web Tokens • BCrypt • Active Model Serializers • Custom CSS/HTML",
       githubURL: "https://github.com/sylviapap/racoon-client",
       backendRepo: "https://github.com/sylviapap/racoon-server",
       blogURL: "https://dev.to/sylviapap/check-out-my-coding-bootcamp-final-project-1lc1"
@@ -36,16 +36,16 @@ export const data = {
       title: "Translation Chat Messenger",
       imageURL: "talkr1.png",
       websiteURL: "https://translation-chat-app.herokuapp.com/",
-      description: "Chat application that auto-detects and translates all messages to user's preferred language",
-      technology: "Ruby on Rails Frontend and Backend, BCrypt and sessions for user authentication, Google Cloud Translation API, Bootstrap CSS",
+      description: "Auto-detects and translates all messages to user's preferred language",
+      technology: "Ruby on Rails • BCrypt • Rails sessions • Google Cloud Translation API • Bootstrap CSS",
       githubURL: "https://github.com/sylviapap/TalkR"
     },
     {
       title: "Subscription Manager",
       imageURL: "subscribr1.png",
       websiteURL: "https://subscribr.netlify.app/",
-      description: "Personalized dashboard to track and budget subcriptions to paid services and free trials",
-      technology: "React.js frontend, Ruby on Rails API Backend, JSON Web Tokens, BCrypt, Semantic UI",
+      description: "Personalized budgeting dashboard",
+      technology: "React.js • Ruby on Rails • JSON Web Tokens • BCrypt • Semantic UI",
       githubURL: "https://github.com/sylviapap/client-subscription-app",
       backendRepo: "https://github.com/sylviapap/server-subscription-app"
     },
@@ -53,8 +53,8 @@ export const data = {
       title: "Whack-a-Corona",
       imageURL: "whackcorona1.png",
       websiteURL: "https://sylviapap.github.io/kill-a-corona-sample/",
-      description: "Whack-a-Mole style SPA game with virus images",
-      technology: "Javascript frontend, Rails Backend for user score save, Custom CSS/HTML",
+      description: "Whack-a-Mole style SPA game + Coronavirus",
+      technology: "JavaScript • Rails • CSS • HTML",
       githubURL: "https://github.com/brookebachman00/kill_a_corona_frontend_js",
       backendRepo: "https://github.com/brookebachman00/kill_a_corona_backend_rails",
       blogURL: "https://dev.to/sylviapap/kill-coronavirus-with-this-simple-game-3l5"
@@ -64,7 +64,7 @@ export const data = {
       imageURL: "chatbot1.png",
       websiteURL: "https://sylviapap.github.io/chatbot/",
       description: "An exercise in Javascript fundamentals without the use of any external chatbot libraries",
-      technology: "Javascript, CSS, HTML",
+      technology: "JavaScript • CSS • HTML",
       githubURL: "https://github.com/sylviapap/chatbot",
       blogURL: "https://dev.to/sylviapap/make-a-simple-chatbot-with-javascript-1gc"
     },
@@ -72,7 +72,7 @@ export const data = {
       title: "CLI Symptom Checker",
       imageURL: "cli1.png",
       description: "CLI App for symptom-disease lookup",
-      technology: "Ruby, rest-client, Infermedica API",
+      technology: "Ruby • rest-client • Infermedica API",
       githubURL: "https://github.com/sylviapap/ruby-cli-app"
     }
   ]
