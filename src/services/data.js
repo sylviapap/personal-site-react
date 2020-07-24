@@ -27,7 +27,7 @@ export const data = {
       imageURL: "racoonmap1.png", 
       websiteURL: "https://racoon.digital/",
       description: "COVID-19 diagnostic reporting service",
-      technology: "React.js • Redux • Thunk • Google Maps Javascript API • Infermedica Symptom Checking API • Ruby on Rails API Backend • JSON Web Tokens • BCrypt • Active Model Serializers • Custom CSS/HTML",
+      technology: "React.js • Redux • Thunk • Google Maps Javascript API • Infermedica Symptom Checking API • Ruby on Rails API Backend • JSON Web Tokens • BCrypt • Active Model Serializers • Custom CSS • HTML • Official COVID-19 Data • Images & Logos From Graphic Designer • Chatbot Widget Integration",
       githubURL: "https://github.com/sylviapap/racoon-client",
       backendRepo: "https://github.com/sylviapap/racoon-server",
       blogURL: "https://dev.to/sylviapap/check-out-my-coding-bootcamp-final-project-1lc1"
@@ -63,7 +63,7 @@ export const data = {
       title: "JavaScript Chatbot",
       imageURL: "chatbot1.png",
       websiteURL: "https://sylviapap.github.io/chatbot/",
-      description: "An exercise in Javascript fundamentals without the use of any external chatbot libraries",
+      description: "An exercise in fundamentals without external chatbot libraries",
       technology: "JavaScript • CSS • HTML",
       githubURL: "https://github.com/sylviapap/chatbot",
       blogURL: "https://dev.to/sylviapap/make-a-simple-chatbot-with-javascript-1gc"
@@ -71,7 +71,7 @@ export const data = {
     {
       title: "CLI Symptom Checker",
       imageURL: "cli1.png",
-      description: "CLI App for symptom-disease lookup",
+      description: "Enter symptoms and receive diagnoses from the command line",
       technology: "Ruby • rest-client • Infermedica API",
       githubURL: "https://github.com/sylviapap/ruby-cli-app"
     }

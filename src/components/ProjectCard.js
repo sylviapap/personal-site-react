@@ -15,6 +15,9 @@ const useStyles = makeStyles({
     display: 'flex',
     flexWrap: "wrap"
   },
+  caps: {
+    fontVariant: "all-small-caps"
+  }
 });
 
 const ProjectCard = props =>  {
@@ -37,7 +40,7 @@ const ProjectCard = props =>  {
           <Typography variant="body2" color="textSecondary" component="p">
             {description}
           </Typography>
-          <Typography variant="body1" color="textSecondary" component="p">
+          <Typography variant="body1" color="textSecondary" component="p" className={classes.caps}>
             {technology}
           </Typography>
         </CardContent>
