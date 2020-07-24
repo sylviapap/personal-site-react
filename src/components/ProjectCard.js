@@ -34,6 +34,7 @@ const ProjectCard = props =>  {
           alt={description}
           image={img}
           title={title}
+          height="250px"
         />      
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
