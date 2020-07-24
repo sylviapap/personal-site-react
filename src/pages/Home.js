@@ -18,10 +18,6 @@ const useStyles = makeStyles({
     justifyContent: "space-between"
   },
   paper: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    alignItems: "center",
     minHeight: "65px"
   },
   media: {
@@ -124,7 +120,7 @@ export default function Home() {
         <Card className={classes.root}>
           <CardContent>
             <Typography variant="h5" component="h2">
-              Contact Me
+              Contact
             </Typography>
             <CardActions className={classes.paper}>
               {contactItems.map(item => <Button
