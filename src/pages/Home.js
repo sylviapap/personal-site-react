@@ -86,10 +86,10 @@ export default function Home() {
         <Card className={classes.root}>
             <CardContent>
               <Typography variant="body2" gutterBottom>
-              I've studied <strong>philosophy, psychology, economics, math,</strong> and <strong>international relations</strong>, and I've worked in <strong>finance, law</strong>, and <strong>education</strong>. 
+              A few things about me: I've studied <strong>philosophy, psychology, economics, math,</strong> and <strong>international relations</strong>. I've worked in <strong>finance, law</strong>, and <strong>education</strong>. 
               <br></br>
               <br></br>
-              I learned to <strong>code</strong> in 4th grade, making web pages on Neopets with <strong>HTML</strong>. But a childhood of computer games isn't the same as a career, so I tried some other things. Fast forward a few years to studying for the LSAT, when I realized that I only really enjoyed the logic puzzles section. I was reminded of everything I love about <strong>computer science</strong> - Boolean algebra, proofs, and (relative) certainty. So I moved back to <strong>San Francisco</strong> to pursue Flatiron School's Full Stack Web Development <Link className={classes.links} underline="none" href="https://flatironschool.com/career-courses/coding-bootcamp/san-francisco">immersive</Link>. I've been passionately clicking buttons and hitting keys every day since, and can finally say I found a career that I truly love.
+              I started <strong>coding</strong> in 4th grade, making web pages on Neopets with <strong>HTML</strong>. Fast forward a few years to studying for the LSAT, when I realized that I only really enjoyed the logic puzzles section. I was reminded of everything I love about <strong>computer science</strong> - Boolean algebra, proofs, and objectivity. So I moved to <strong>San Francisco</strong>, completed Flatiron School's Full Stack Web Development <Link className={classes.links} underline="none" href="https://flatironschool.com/career-courses/coding-bootcamp/san-francisco">immersive</Link>, and have been loving every day of the developer life since. As they say, <code>window.history.pushState("the rest", "is")</code>
               <br></br>
               <br></br>
               Other passions: dogs, piano, kickboxing, travel, weird food, and <Link className={classes.links} underline="none" href="https://www.instagram.com/p/B-AJtycgYKU/?igshid=12f3s8qalj71s">memes</Link>.
