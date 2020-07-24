@@ -22,9 +22,8 @@ const useStyles = makeStyles({
   },
   media: {
     width: "100%",
-    height: "100%",
-    minHeight: "250px",
-    maxWidth: "250px",
+    minHeight: 250,
+    minWidth: 250,
   },
   skills: {
     fontVariant: "all-small-caps",
@@ -60,14 +59,14 @@ export default function Home() {
           {/* Container within the card for flex grid */}
           <Grid container className={classes.root}>
             {/* Profile Picture */}
-            <Grid item xs={6}>
+            <Grid item sm={3} className={classes.media}>
               <CardMedia
                 className={classes.media}
                 image={profilepic}
               />
             </Grid>
             {/* Card title and text */}
-            <Grid item xs={6}>
+            <Grid item >
               <CardContent>
                 <Typography gutterBottom variant="h2" component="h2">
                   Hi, I'm Sylvia
