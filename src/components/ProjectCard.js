@@ -13,7 +13,9 @@ const useStyles = makeStyles({
     width: "100%",
     height: "100%",
     display: 'flex',
-    flexWrap: "wrap"
+    flexWrap: "wrap",
+    justifyContent: "space-evenly",
+    alignContent: "space-between"
   },
   caps: {
     fontVariant: "all-small-caps"
@@ -37,7 +39,7 @@ const ProjectCard = props =>  {
           <Typography gutterBottom variant="h5" component="h2">
             {title}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body1" color="textSecondary" component="p">
             {description}
           </Typography>
           <Typography variant="body1" color="textSecondary" component="p" className={classes.caps}>
@@ -45,16 +47,16 @@ const ProjectCard = props =>  {
           </Typography>
         </CardContent>
       <CardActions>
-        {websiteURL ? <Button size="small" color="primary" href={websiteURL}>
-          Visit Site
+        {websiteURL ? <Button size="small" color="default" href={websiteURL} aria-label="visit-external-website">
+          <Icon className="fas fa-external-link-alt"/>
         </Button> : null}
         
-        <Button size="small" color="primary" href={githubURL}>
+        <Button size="small" color="default" href={githubURL} aria-label="github">
           <Icon className="fa fa-github"/>
         </Button>
 
-        {blogURL ? <Button size="small" color="primary" href={blogURL}>
-          Blog Post
+        {blogURL ? <Button size="small" color="default" href={blogURL} aria-label="blog-post">
+        <Icon className="fab fa-dev"/>
         </Button> : null} 
         
       </CardActions>
