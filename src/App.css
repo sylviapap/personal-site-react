@@ -2,11 +2,17 @@ body {
   background: linear-gradient(#cbe4f4, #f4d2c6, #93acc9, #f0c9c9, #bbd1df );
 }
 
-/* Keeping this here as a comment for potential background image option
+code {
+  font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,  
+    monospace;
+  background: #dbe9f1;
+  padding: 2px;
+}
 
-body {
-  background-image: url(/images/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-} 
-*/
+strong {
+  color: #0a3f5e;
+}
+
+a:hover {
+  color: #6b4c41;
+}
