@@ -30,7 +30,7 @@ export default function Nav() {
           </Link>
         </Grid>
         <Grid item xs={2}>
-          <Link href="resume.pdf"
+          <Link component={RouterLink} to="/resume"
           variant="body2" color="inherit">
           Resume
           </Link>

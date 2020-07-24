@@ -5,7 +5,7 @@ import Nav from './components/Nav';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import Projects from './pages/Projects';
-
+import ResumePage from './pages/ResumePage';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
+    height: "100%"
   },
   main: {
     marginTop: theme.spacing(8),
@@ -23,7 +24,8 @@ const useStyles = makeStyles((theme) => ({
   },
   footer: {
     padding: theme.spacing(3, 2),
-    marginTop: 'auto'
+    marginTop: 'auto',
+    marginLeft: 'auto',
   },
 }));
 
@@ -32,18 +34,18 @@ export default function App() {
   return (
     <div className={classes.root}>
       <CssBaseline />      
-      <Container >
+      <Container className={classes.root}>
         <Box my={5}>
           <Nav />
+        </Box>
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={Projects} />
-        </Box>
-      </Container>
+          <Route path="/resume" component={ResumePage} />
+
       <footer className={classes.footer}>
-        <Container maxWidth="sm">
-          <Footer/>
-        </Container>
+        <Footer/>
       </footer>
+      </Container>
     </div>
   )
 }
