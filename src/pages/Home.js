@@ -18,7 +18,10 @@ const useStyles = makeStyles({
     justifyContent: "space-between"
   },
   paper: {
-    minHeight: "65px"
+    minHeight: "65px",
+    display: 'flex',
+    flexWrap: "wrap",
+    justifyContent: "space-evenly"
   },
   media: {
     width: "100%",
