@@ -1,25 +1,21 @@
 export const data = {
-  firstname: "Sylvia", 
-  lastname: "Pap", 
+  firstName: "Sylvia", 
+  lastName: "Pap", 
   image: "profilepic.png",
   email: "sylviapap1@gmail.com",
-  phone: "805-709-7858",
-  address: {
-    city: "Sacramento",
-    state: "CA"
-  },
   website: "http://www.sylviapap.com",
   github: "http://github.com/sylviapap",
   linkedin: "https://www.linkedin.com/in/sylvia-pap",
   blog: "https://dev.to/sylviapap",
   twitter: "https://twitter.com/sylviapapdev",
   skills: [
-    "React",
-    "Redux",
     "JavaScript",
-    "Rails",
     "Ruby",
-    "Python"
+    "Python",
+    "React",
+    "Rails",
+    "CSS",
+    "HTML",
   ],
   projects: [
     {
@@ -29,7 +25,6 @@ export const data = {
       description: "COVID-19 diagnostic reporting service",
       technology: "React.js • Redux • Thunk • Google Maps Javascript API • Infermedica Symptom Checking API • Ruby on Rails API Backend • JSON Web Tokens • BCrypt • Active Model Serializers • Custom CSS • HTML • Official COVID-19 Data • Images & Logos From Graphic Designer • Chatbot Widget Integration",
       githubURL: "https://github.com/sylviapap/racoon-client",
-      backendRepo: "https://github.com/sylviapap/racoon-server",
       blogURL: "https://dev.to/sylviapap/check-out-my-coding-bootcamp-final-project-1lc1"
     },
     {
@@ -47,7 +42,6 @@ export const data = {
       description: "Personalized budgeting dashboard",
       technology: "React.js • Ruby on Rails • JSON Web Tokens • BCrypt • Semantic UI",
       githubURL: "https://github.com/sylviapap/client-subscription-app",
-      backendRepo: "https://github.com/sylviapap/server-subscription-app"
     },
     {
       title: "Whack-a-Corona",
@@ -56,7 +50,6 @@ export const data = {
       description: "Whack-a-Mole style SPA game + Coronavirus",
       technology: "JavaScript • Rails • CSS • HTML",
       githubURL: "https://github.com/brookebachman00/kill_a_corona_frontend_js",
-      backendRepo: "https://github.com/brookebachman00/kill_a_corona_backend_rails",
       blogURL: "https://dev.to/sylviapap/kill-coronavirus-with-this-simple-game-3l5"
     },
     {
