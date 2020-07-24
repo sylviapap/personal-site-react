@@ -68,14 +68,14 @@ export default function Home() {
                 image={profilepic}
               />
             </Grid>
-            {/* Card title and text */}
+            {/* Main card title and text */}
             <Grid item >
               <CardContent>
                 <Typography gutterBottom variant="h2" component="h2">
                   Hi, I'm Sylvia
                 </Typography>
                 <Typography variant="body2" gutterBottom>
-                  Currently a Software Engineer, formerly an aspiring lawyer
+                  Current Software Engineer, former Aspiring-Lawyer
                 </Typography>
               </CardContent>
             </Grid>
@@ -89,10 +89,10 @@ export default function Home() {
         <Card className={classes.root}>
             <CardContent>
               <Typography variant="body2" gutterBottom>
-              A few things about me: I've studied <strong>philosophy, psychology, economics, math,</strong> and <strong>international relations</strong>. I've worked in <strong>finance, law</strong>, and <strong>education</strong>. 
+              Before joining the world of <code>tech</code>, I studied <strong>philosophy, psychology, economics, math,</strong> and <strong>international relations</strong>. I worked in <strong>finance, law</strong>, and <strong>education</strong>. 
               <br></br>
               <br></br>
-              I started <strong>coding</strong> in 4th grade, making web pages on Neopets with <strong>HTML</strong>. Fast forward a few years to studying for the LSAT, when I realized that I only really enjoyed the logic puzzles section. I was reminded of everything I love about <strong>computer science</strong> - Boolean algebra, proofs, and objectivity. So I moved to <strong>San Francisco</strong>, completed Flatiron School's Full Stack Web Development <Link className={classes.links} underline="none" href="https://flatironschool.com/career-courses/coding-bootcamp/san-francisco">immersive</Link>, and have been loving every day of the developer life since. As they say, <code>window.history.pushState("the rest", "is")</code>
+              I learned to <code>code</code> in 4th grade, making web pages on Neopets with <strong>HTML</strong>. Fast forward a few years to studying for the LSAT, when I realized that I only really enjoyed the logic puzzles section. I was reminded of everything I love about <strong>computer science</strong> - Boolean algebra, truth tables, and objectivity. So I moved to <strong>San Francisco</strong>, completed Flatiron School's Full Stack Web Development <Link className={classes.links} underline="none" href="https://flatironschool.com/career-courses/coding-bootcamp/san-francisco">immersive</Link>, and have been loving every day of the developer life since. As they say, <code>window.history.pushState("the rest", "is")</code>
               <br></br>
               <br></br>
               Other passions: dogs, piano, kickboxing, travel, weird food, and <Link className={classes.links} underline="none" href="https://www.instagram.com/p/B-AJtycgYKU/?igshid=12f3s8qalj71s">memes</Link>.
