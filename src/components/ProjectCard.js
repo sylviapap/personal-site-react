@@ -27,7 +27,6 @@ const ProjectCard = props =>  {
         <CardMedia
           component="img"
           alt={description}
-          width="100%"
           image={img}
           title={title}
         />      
