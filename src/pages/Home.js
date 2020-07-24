@@ -105,7 +105,7 @@ export default function Home() {
 {/* End about me */}
 
 {/* Begin skills card */}
-      <Grid item xs={6}>
+      <Grid item sm={6}>
         <Card className={classes.root}>
           <CardContent>
             <Typography variant="h5" component="h2">
@@ -120,7 +120,7 @@ export default function Home() {
 {/* End skills */}
 
 {/* Begin contact items card */}
-      <Grid item xs={6}>
+      <Grid item sm={6}>
         <Card className={classes.root}>
           <CardContent>
             <Typography variant="h5" component="h2">
