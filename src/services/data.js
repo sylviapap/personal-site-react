@@ -1,7 +1,8 @@
 export const data = {
   firstName: "Sylvia", 
-  lastName: "Pap", 
-  image: "profilepic.png",
+  lastName: "Pap",
+  headline: "Current Software Engineer, former Aspiring-Lawyer",
+  profilePic: "profilepic.png",
   email: "sylviapap1@gmail.com",
   website: "http://www.sylviapap.com",
   github: "http://github.com/sylviapap",
