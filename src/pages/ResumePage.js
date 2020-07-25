@@ -1,13 +1,35 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
+import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
 import CardActions from '@material-ui/core/CardActions';
+import Grid from '@material-ui/core/Grid';
+
 
 const useStyles = makeStyles({
   root: {
-    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center"
+  },
+  container: {
+    position: "relative",
+    overflow: "hidden",
     width: "100%",
+    height: "100%",
+    paddingTop: "56.25%",
+  },
+  iframe: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+    width: "100%",
+    height: "100%",
+  },
+  button: {
+    marginTop: "1%",
   }
 })
 
@@ -15,16 +37,23 @@ export default function ResumePage() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
-    <iframe 
-      src="resume.pdf" 
-      width="100%" 
-      height="600" 
-      title="resume">
-    </iframe>
-    <CardActions>
-      <Button href="resume.pdf" variant="contained" color="inherit">Open in separate window</Button>
-    </CardActions>
-    </Card>
+    <div className={classes.root}>
+    <Container className={classes.container}>
+      <iframe 
+        src="resume.pdf" 
+        title="resume"
+        className={classes.iframe}
+        >
+      </iframe>
+    </Container>
+      <Button 
+        href="resume.pdf" 
+        variant="contained" 
+        color="inherit"
+        className={classes.button}
+        >
+        View Full Screen
+      </Button>
+    </div>
   );
 }
