@@ -25,7 +25,7 @@ const useStyles = makeStyles({
 
 const ProjectCard = props =>  {
   const classes = useStyles();
-  const {imageURL, title, description, websiteURL, githubURL, technology, blogURL} = props.project
+  const {imageURL, title, description, websiteURL, githubURL, technology, blogURL, youtubeURL} = props.project
   const img = "images/" + imageURL
 
   return (
@@ -63,7 +63,11 @@ const ProjectCard = props =>  {
 
         {blogURL ? <Button size="small" color="default" href={blogURL} aria-label="blog-post">
         <Icon className="fab fa-dev"/>
-        </Button> : null} 
+        </Button> : null}
+
+        {youtubeURL ? <Button color="default" href={youtubeURL} aria-label="youtube-link">
+        <Icon className="fa fa-youtube-play"/>
+        </Button> : null}
         
       </CardActions>
     </Card>

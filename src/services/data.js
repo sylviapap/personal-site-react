@@ -26,7 +26,8 @@ export const data = {
       description: "COVID-19 diagnostic reporting service",
       technology: "React.js • Redux • Thunk • Google Maps Javascript API • Infermedica Symptom Checking API • Ruby on Rails API Backend • JSON Web Tokens • BCrypt • Active Model Serializers • Custom CSS • HTML • Official COVID-19 Data • Images & Logos From Graphic Designer • Chatbot Widget Integration",
       githubURL: "https://github.com/sylviapap/racoon-client",
-      blogURL: "https://dev.to/sylviapap/check-out-my-coding-bootcamp-final-project-1lc1"
+      blogURL: "https://dev.to/sylviapap/check-out-my-coding-bootcamp-final-project-1lc1",
+      youtubeURL: "https://youtu.be/SntYf3koT1c"
     },
     {
       title: "Translation Chat Messenger",
