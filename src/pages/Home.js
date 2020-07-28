@@ -127,12 +127,14 @@ export default function Home() {
             <CardActions className={classes.paper}>
               {contactItems.map(item => <Button
                 variant="contained"
+                color="default"
                 className={classes.items}
-                startIcon={<Icon className={item.icon}/>}
                 href={item.href}
                 key={contactItems.indexOf(item)}
                 aria-label={item.text}
-              />)}
+              >
+                <Icon className={item.icon}/>
+              </Button>)}
             </CardActions>
           </CardContent>
         </Card>
