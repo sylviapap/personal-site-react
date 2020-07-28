@@ -35,7 +35,8 @@ export const data = {
       websiteURL: "https://translation-chat-app.herokuapp.com/",
       description: "Auto-detects and translates all messages to user's preferred language",
       technology: "Ruby on Rails • BCrypt • Rails sessions • Google Cloud Translation API • Bootstrap CSS",
-      githubURL: "https://github.com/sylviapap/TalkR"
+      githubURL: "https://github.com/sylviapap/TalkR",
+      youtubeURL: "https://youtu.be/WzkuAMt6k8I"
     },
     {
       title: "Subscription Manager",
