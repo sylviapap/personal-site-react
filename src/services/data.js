@@ -3,7 +3,6 @@ export const data = {
   lastName: "Pap",
   headline: "Current Software Engineer, former Aspiring-Lawyer",
   profilePic: "profilepic.png",
-  email: "sylviapap1@gmail.com",
   website: "http://www.sylviapap.com",
   github: "http://github.com/sylviapap",
   linkedin: "https://www.linkedin.com/in/sylvia-pap",
@@ -75,11 +74,6 @@ export const data = {
 }
 
 export const contactItems = [
-  {
-    href:`mailto:${data.email}`,
-    icon: "fa fa-google",
-    text: data.email
-  },
   {
     href: data.linkedin,
     icon: "fa fa-linkedin",
