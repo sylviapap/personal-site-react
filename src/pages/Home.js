@@ -10,9 +10,6 @@ import Grid from '@material-ui/core/Grid';
 import CardActions from '@material-ui/core/CardActions';
 import Icon from '@material-ui/core/Icon';
 import Link from '@material-ui/core/Link';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 
 const useStyles = makeStyles({
   root: {
@@ -37,18 +34,27 @@ const useStyles = makeStyles({
     border: "thin",
     borderStyle: "dotted",
     borderRadius: "5px",
+    margin: "5px 5px 5px 8px",
     padding: "5px",
-    margin: "5px 5px 5px 8px"
+    background: "#dbe9f1",
+    fontWeight: "bold"
+  },
+  contact: {
+    margin: "20px 10px 0px 0px",
   },
   items: {
-    margin: "5px 5px 5px 8px",
-    padding: "5px"  
+    margin: "5px",
   },
   links: {
     color: "black",
     borderBottomStyle: "dotted",
     border: "thin",
   },
+  header: {
+    textAlign: "left",
+    padding: "5%",
+    margin: "1%"
+  }
 });
 
 export default function Home() {
@@ -72,14 +78,26 @@ export default function Home() {
               />
             </Grid>
             {/* Main card title and text */}
-            <Grid item >
-              <CardContent>
+            <Grid item sm={5}>
+              <CardContent className={classes.header}>
                 <Typography gutterBottom variant="h2" component="h2">
                   Hi, I'm {firstName}
                 </Typography>
-                <Typography variant="body2" gutterBottom>
+                <Typography variant="body1" gutterBottom>
                   {headline}
                 </Typography>
+                
+                {contactItems.map(item => <Button
+                variant="contained"
+                color="default"
+                className={classes.contact}
+                href={item.href}
+                key={contactItems.indexOf(item)}
+                aria-label={item.text}
+              >
+                <Icon className={item.icon}/>
+              </Button>)}
+                
               </CardContent>
             </Grid>
           </Grid>
@@ -106,63 +124,37 @@ export default function Home() {
 {/* End about me */}
 
 {/* Begin skills card */}
-      <Grid item sm={6}>
+      <Grid item >
         <Card className={classes.root}>
           <CardContent>
             <Typography variant="h5" component="h2">
               Technical Skills
             </Typography>
             <CardActions className={classes.paper}>
-              {skills.map(skill => <span key={skills.indexOf(skill)} className={classes.skills}>{skill}</span>)}
+              {skills.map(skill => <span key={skills.indexOf(skill)} className={classes.skills}><code>{skill}</code></span>)}
             </CardActions>
           </CardContent>
         </Card>
       </Grid>
 {/* End skills */}
-
-{/* Begin contact items card */}
-      <Grid item sm={6}>
-        <Card className={classes.root}>
-          <CardContent>
-            <Typography variant="h5" component="h2">
-              Contact
-            </Typography>
-            <CardActions className={classes.paper}>
-              {contactItems.map(item => <Button
-                variant="contained"
-                color="default"
-                className={classes.items}
-                href={item.href}
-                key={contactItems.indexOf(item)}
-                aria-label={item.text}
-              >
-                <Icon className={item.icon}/>
-              </Button>)}
-            </CardActions>
-          </CardContent>
-        </Card>
-      </Grid>
-{/* End contact items */}
-
-      <Grid item xs={12} >
+      <Grid item >
         <Card className={classes.root}>
           <CardContent>
             <Typography variant="h5" component="h2">
             Blog Posts
             </Typography>
             <CardActions className={classes.paper}>
-              <List>
-              {blogPosts.map(item => <ListItem key={blogPosts.indexOf(item)}>
-                <Link
-                className={classes.links} 
-                underline="none"
+              {blogPosts.map(item => 
+              <Button 
+                key={blogPosts.indexOf(item)}
+                className={classes.items} 
                 href={item.href}
-                >
-                  <ListItemText>{item.title}</ListItemText>
-                </Link>
-              </ListItem>
+                aria-label={item.title}
+                variant="outlined"
+              >
+                  <strong>{item.title}</strong>
+              </Button>
               )}
-              </List>
             </CardActions>
           </CardContent>
         </Card>
