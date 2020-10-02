@@ -9,13 +9,15 @@ export const data = {
   blog: "https://dev.to/sylviapap",
   twitter: "https://twitter.com/sylviapapdev",
   skills: [
-    "JavaScript",
-    "Ruby",
     "Python",
-    "React",
+    "Ruby",
+    "JavaScript",
     "Rails",
+    "React",
     "CSS",
     "HTML",
+    "Test Driven Development",
+    "Data Structures & Algorithms"
   ],
   projects: [
     {
@@ -99,7 +101,7 @@ export const contactItems = [
 export const blogPosts = [
   {
     href: "https://dev.to/sylviapap/how-to-make-your-own-no-template-personal-website-with-react-material-ui-and-netlify-pij",
-    title: "Tutorial: personal website with React, Material UI, and Netlify"
+    title: "Personal Website with React, Material UI, & Netlify"
   },
   {
     href: "https://dev.to/sylviapap/bcrypt-explained-4k5c",
@@ -107,31 +109,23 @@ export const blogPosts = [
   },
   {
     href: "https://dev.to/sylviapap/make-a-simple-chatbot-with-javascript-1gc",
-    title: "Simple JavaScript Chatbot"
+    title: "JavaScript Chatbot"
   },
   {
     href: "https://dev.to/sylviapap/check-out-my-coding-bootcamp-final-project-1lc1",
-    title: "Symptom Check & Report COVID Project"
+    title: "COVID Symptom Checker & Map"
   },
   {
     href: "https://dev.to/sylviapap/setting-heroku-config-vars-with-google-cloud-json-file-on-rails-4dnf",
-    title: "Heroku Config with JSON Credentials"
-  },
-  {
-    href: "https://dev.to/sylviapap/the-bigger-picture-behind-the-github-master-branch-name-change-35h8",
-    title: "The bigger picture behind the GitHub master branch name change"
-  },
-  {
-    href: "https://dev.to/sylviapap/10-tech-youtube-channels-to-diversify-your-feed-ad4",
-    title: "10 Tech YouTube Channels to Diversify Your Feed"
+    title: "Heroku Configuration"
   },
   {
     href: "https://dev.to/sylviapap/learning-swift-ios-and-vapor-in-one-week-2ap7",
-    title: "Swift, iOS, and Vapor in one week"
+    title: "Swift, iOS, & Vapor"
   },
   {
     href: "https://dev.to/sylviapap/beginner-healthcare-ai-tensorflow-js-4ma1",
-    title: "Healthcare AI & TensorFlow.js"
+    title: "Healthcare AI & TensorFlow"
   },
   {
     href: "https://dev.to/sylviapap/mapbox-and-tool-tips-in-react-30ie",
@@ -143,6 +137,6 @@ export const blogPosts = [
   },
   {
     href: "https://dev.to/sylviapap/the-ruby-enumerable-operator-and-max-vs-maxby-ac6",
-    title: "Comparisons using <=> in Ruby"
+    title: "Comparisons in Ruby Using <=>"
   }
 ]
