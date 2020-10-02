@@ -10,6 +10,10 @@ import Grid from '@material-ui/core/Grid';
 import CardActions from '@material-ui/core/CardActions';
 import Icon from '@material-ui/core/Icon';
 import Link from '@material-ui/core/Link';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles({
   root: {
@@ -143,28 +147,27 @@ export default function Home() {
 
       <Grid item xs={12} >
         <Card className={classes.root}>
-            <CardContent>
-              <Typography variant="h5" component="h2">
-              Blog Posts
-              </Typography>
-              <CardActions className={classes.paper}>
-              <ul>
-              {blogPosts.map(item => <li key={blogPosts.indexOf(item)}>
+          <CardContent>
+            <Typography variant="h5" component="h2">
+            Blog Posts
+            </Typography>
+            <CardActions className={classes.paper}>
+              <List>
+              {blogPosts.map(item => <ListItem key={blogPosts.indexOf(item)}>
                 <Link
                 className={classes.links} 
                 underline="none"
                 href={item.href}
                 >
-                  {item.title}
+                  <ListItemText>{item.title}</ListItemText>
                 </Link>
-              </li>
+              </ListItem>
               )}
-              </ul>
+              </List>
             </CardActions>
-            </CardContent>
+          </CardContent>
         </Card>
       </Grid>
-
     </Grid> // End container
   );
 }
