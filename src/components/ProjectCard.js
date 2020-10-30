@@ -20,6 +20,9 @@ const useStyles = makeStyles({
   },
   caps: {
     fontVariant: "all-small-caps"
+  },
+  content: {
+    alignContent: "top"
   }
 });
 
@@ -41,7 +44,7 @@ const ProjectCard = props =>  {
         />
         </Link>
       </CardActionArea>
-        <CardContent>
+        <CardContent className={classes.content}>
           <Typography gutterBottom variant="h5" component="h2">
             {title}
           </Typography>

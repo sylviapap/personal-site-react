@@ -21,11 +21,19 @@ export const data = {
   ],
   projects: [
     {
+      title: "Life Story Twitter",
+      imageURL: "bg.jpg", 
+      websiteURL: "https://sylviapap-futuretwitterapprentice.netlify.app/",
+      description: "Twitter clone to answer application question 'Tell us your life story in Tweets'",
+      technology: "React • JavaScript • CSS • HTML • Material UI",
+      githubURL: "https://github.com/sylviapap/twitter-clone"
+    },
+    {
       title: "Racoon",
       imageURL: "racoonmap1.png", 
       websiteURL: "https://racoon.digital/",
       description: "COVID-19 diagnostic reporting service",
-      technology: "React.js • Redux • Thunk • Google Maps Javascript API • Infermedica Symptom Checking API • Ruby on Rails API Backend • JSON Web Tokens • BCrypt • Active Model Serializers • Custom CSS • HTML • Official COVID-19 Data • Images & Logos From Graphic Designer • Chatbot Widget Integration",
+      technology: "React • Redux • Google Maps • Infermedica • Rails • JSON Web Tokens • BCrypt • Active Model Serializers • CSS",
       githubURL: "https://github.com/sylviapap/racoon-client",
       blogURL: "https://dev.to/sylviapap/check-out-my-coding-bootcamp-final-project-1lc1",
       youtubeURL: "https://youtu.be/SntYf3koT1c"
@@ -34,8 +42,8 @@ export const data = {
       title: "Translation Chat Messenger",
       imageURL: "talkr1.png",
       websiteURL: "https://translation-chat-app.herokuapp.com/",
-      description: "Auto-detects and translates all messages to user's preferred language",
-      technology: "Ruby on Rails • BCrypt • Rails sessions • Google Cloud Translation API • Bootstrap CSS",
+      description: "Auto-detects & translates group chat messages to user's preferred language",
+      technology: "Rails • BCrypt • Google Cloud Translation • Bootstrap",
       githubURL: "https://github.com/sylviapap/TalkR",
       youtubeURL: "https://youtu.be/WzkuAMt6k8I"
     },
@@ -44,7 +52,7 @@ export const data = {
       imageURL: "subscribr1.png",
       websiteURL: "https://subscribr.netlify.app/",
       description: "Personalized budgeting dashboard",
-      technology: "React.js • Ruby on Rails • JSON Web Tokens • BCrypt • Semantic UI",
+      technology: "React • Rails • JSON Web Tokens • BCrypt • Semantic UI",
       githubURL: "https://github.com/sylviapap/client-subscription-app",
     },
     {
