@@ -66,7 +66,7 @@ export const data = {
     },
     {
       title: "JavaScript Chatbot",
-      imageURL: "chatbot1.png",
+      imageURL: "chatbot.png",
       websiteURL: "https://sylviapap.github.io/chatbot/",
       description: "An exercise in fundamentals without external chatbot libraries",
       technology: "JavaScript • CSS • HTML",
