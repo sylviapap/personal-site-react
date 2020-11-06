@@ -1,30 +1,21 @@
 export const data = {
   firstName: "Sylvia", 
   lastName: "Pap",
-  headline: "Current Software Engineer, former Aspiring-Lawyer",
+  headline: "Current Software Engineer, former Aspiring Lawyer",
   profilePic: "profilepic.png",
   website: "http://www.sylviapap.com",
   github: "http://github.com/sylviapap",
   linkedin: "https://www.linkedin.com/in/sylvia-pap",
   blog: "https://dev.to/sylviapap",
   twitter: "https://twitter.com/sylviapapdev",
-  skills: [
-    "Python",
-    "Ruby",
-    "JavaScript",
-    "Rails",
-    "React",
-    "CSS",
-    "HTML",
-    "Test Driven Development",
-    "Data Structures & Algorithms"
-  ],
+  stackOverflow: "https://stackoverflow.com/users/13272348/sylvia-pap",
+  leetCode: "https://leetcode.com/sylviapap1/",
   projects: [
     {
       title: "Life Story Twitter",
       imageURL: "bg.jpg", 
       websiteURL: "https://sylviapap-futuretwitterapprentice.netlify.app/",
-      description: "Twitter clone to answer application question 'Tell us your life story in Tweets'",
+      description: "Clone project to answer application question 'Tell us your life story in Tweets'",
       technology: "React • JavaScript • CSS • HTML • Material UI",
       githubURL: "https://github.com/sylviapap/twitter-clone"
     },
@@ -83,6 +74,44 @@ export const data = {
   ]
 }
 
+export const skills = [
+  {
+    name: "Python", 
+    href: "https://github.com/sylviapap/python-project"
+  },
+  {
+    name: "Ruby", 
+    href: "https://github.com/sylviapap/ruby-cli-app"
+  },
+  {
+    name: "JavaScript", 
+    href: "https://github.com/sylviapap/chatbot"
+  },
+  {
+    name: "Rails", 
+    href: "https://github.com/sylviapap/racoon-server"
+  },
+  {
+    name: "React", 
+    href: "https://github.com/sylviapap/racoon-client"
+  },
+  {
+    name: "CSS", 
+    href: "https://github.com/sylviapap/kill-a-corona-sample"
+  },
+  {
+    name: "HTML", 
+    href: "https://github.com/sylviapap/first-personal-site"
+  },
+  {
+    name: "Test Driven Development", 
+    href: "https://github.com/sylviapap/racoon-server"
+  },
+  {
+    name: "Data Structures & Algorithms", 
+    href: data.leetCode}
+]
+
 export const contactItems = [
   {
     href: data.linkedin,
@@ -103,6 +132,11 @@ export const contactItems = [
     href: data.twitter,
     icon: "fa fa-twitter",
     text: "Twitter"
+  },
+  {
+    href: data.stackOverflow,
+    icon: "fab fa-stack-overflow",
+    text: "Stack Overflow"
   }
 ]
 
