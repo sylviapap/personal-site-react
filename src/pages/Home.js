@@ -1,4 +1,4 @@
-import {data, contactItems, blogPosts} from '../services/data'
+import {data, contactItems, blogPosts, skills} from '../services/data'
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -37,7 +37,9 @@ const useStyles = makeStyles({
     margin: "5px 5px 5px 8px",
     padding: "5px",
     background: "#dbe9f1",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    textDecoration: "none",
+    color: "#0a3f5e"
   },
   contact: {
     margin: "20px 10px 0px 0px",
@@ -58,7 +60,7 @@ const useStyles = makeStyles({
 });
 
 export default function Home() {
-  const {skills, firstName, headline, profilePic} = data
+  const {firstName, headline, profilePic} = data
   const profilepic= "images/" + profilePic;
   const classes = useStyles();
 
@@ -131,7 +133,7 @@ export default function Home() {
               Technical Skills
             </Typography>
             <CardActions className={classes.paper}>
-              {skills.map(skill => <span key={skills.indexOf(skill)} className={classes.skills}><code>{skill}</code></span>)}
+              {skills.map(skill => <a href={skill.href} className={classes.skills}><span key={skill.name}><code>{skill.name}</code></span></a>)}
             </CardActions>
           </CardContent>
         </Card>
