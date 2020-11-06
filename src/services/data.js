@@ -49,7 +49,7 @@ export const data = {
     {
       title: "Whack-a-Corona",
       imageURL: "whackcorona1.png",
-      websiteURL: "https://sylviapap.github.io/kill-a-corona-sample/",
+      websiteURL: "https://sylviapap.github.io/whack-a-virus/",
       description: "Whack-a-Mole style SPA game + Coronavirus",
       technology: "JavaScript • Rails • CSS • HTML",
       githubURL: "https://github.com/brookebachman00/kill_a_corona_frontend_js",
