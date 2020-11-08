@@ -9,7 +9,7 @@ export const data = {
   blog: "https://dev.to/sylviapap",
   twitter: "https://twitter.com/sylviapapdev",
   stackOverflow: "https://stackoverflow.com/users/13272348/sylvia-pap",
-  leetCode: "https://leetcode.com/sylviapap1/",
+  leetCode: "https://leetcode.com/sylviapap/",
   projects: [
     {
       title: "Life Story Twitter",
