@@ -52,7 +52,7 @@ export const data = {
       websiteURL: "https://sylviapap.github.io/whack-a-virus/",
       description: "Whack-a-Mole style SPA game + Coronavirus",
       technology: "JavaScript • Rails • CSS • HTML",
-      githubURL: "https://github.com/brookebachman00/kill_a_corona_frontend_js",
+      githubURL: "https://github.com/sylviapap/whack-a-virus",
       blogURL: "https://dev.to/sylviapap/kill-coronavirus-with-this-simple-game-3l5"
     },
     {
@@ -89,7 +89,7 @@ export const skills = [
   },
   {
     name: "Rails", 
-    href: "https://github.com/sylviapap/racoon-server"
+    href: "https://github.com/sylviapap/TalkR"
   },
   {
     name: "React", 
@@ -97,11 +97,11 @@ export const skills = [
   },
   {
     name: "CSS", 
-    href: "https://github.com/sylviapap/kill-a-corona-sample"
+    href: "https://github.com/sylviapap/whack-a-virus"
   },
   {
     name: "HTML", 
-    href: "https://github.com/sylviapap/first-personal-site"
+    href: "https://github.com/sylviapap/twitter-clone"
   },
   {
     name: "Test Driven Development", 
