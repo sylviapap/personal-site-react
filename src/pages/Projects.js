@@ -1,5 +1,5 @@
 import React from 'react';
-import {data} from '../services/data'
+import {projects} from '../services/data'
 import ProjectCard from '../components/ProjectCard'
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -14,7 +14,6 @@ const useStyles = makeStyles({
 });
 
 export default function Projects() {
-  const projects = data.projects;
   const classes = useStyles();
     return (
       <Grid container spacing={1} className={classes.root}>
