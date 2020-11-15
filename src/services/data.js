@@ -7,7 +7,7 @@ export const data = {
 	github: "http://github.com/sylviapap",
 	linkedin: "https://www.linkedin.com/in/sylvia-pap",
 	blog: "https://dev.to/sylviapap",
-	twitter: "https://twitter.com/sylviapapdev",
+	twitter: "https://twitter.com/sylvialpap",
 	stackOverflow: "https://stackoverflow.com/users/13272348/sylvia-pap",
 	leetCode: "https://leetcode.com/sylviapap/",
 };
