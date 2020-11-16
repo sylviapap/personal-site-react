@@ -58,16 +58,16 @@ const blogURLs = {
 export const projects = [
 	{
 		title: "Life Story Twitter",
-		imageURL: "bg.jpg",
+		imageURL: "twitter-clone.jpg",
 		websiteURL: liveSiteURLs.twitterClone,
 		description:
-			"Clone project to answer application question 'Tell us your life story in Tweets'",
+			"Clone project to answer application question 'Tell your life story in Tweets'",
 		technology: "React • JavaScript • CSS • HTML • Material UI",
 		githubURL: githubRepos.twitterClone,
 	},
 	{
 		title: "Racoon",
-		imageURL: "racoonmap1.png",
+		imageURL: "racoon-map.png",
 		websiteURL: liveSiteURLs.racoon,
 		description: "COVID-19 diagnostic reporting service",
 		technology:
@@ -78,7 +78,7 @@ export const projects = [
 	},
 	{
 		title: "Translation Chat Messenger",
-		imageURL: "talkr1.png",
+		imageURL: "talkr.png",
 		websiteURL: liveSiteURLs.talkr,
 		description:
 			"Auto-detects & translates group chat messages to user's preferred language",
@@ -88,17 +88,17 @@ export const projects = [
 	},
 	{
 		title: "Subscription Manager",
-		imageURL: "subscribr1.png",
+		imageURL: "subscribr.png",
 		websiteURL: liveSiteURLs.subscription,
 		description: "Personalized budgeting dashboard",
 		technology: "React • Rails • JSON Web Tokens • BCrypt • Semantic UI",
 		githubURL: githubRepos.subscription,
 	},
 	{
-		title: "Whack-a-Corona",
-		imageURL: "whackcorona1.png",
+		title: "Whack-a-Virus",
+		imageURL: "whack-virus.png",
 		websiteURL: liveSiteURLs.whack,
-		description: "Whack-a-Mole style SPA game + Coronavirus",
+		description: "SPA Whack-a-Mole style game + Coronavirus",
 		technology: "JavaScript • Rails • CSS • HTML",
 		githubURL: githubRepos.whack,
 		blogURL: blogURLs.whackVirus,
@@ -115,7 +115,7 @@ export const projects = [
 	},
 	{
 		title: "CLI Symptom Checker",
-		imageURL: "cli1.png",
+		imageURL: "ruby-cli.png",
 		description: "Enter symptoms and receive diagnoses from the command line",
 		technology: "Ruby • rest-client • Infermedica API",
 		githubURL: githubRepos.cli,
