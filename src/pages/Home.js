@@ -106,7 +106,7 @@ export default function Home() {
 							<strong>international relations</strong>. I worked in{" "}
 							<strong>finance, law</strong>, and <strong>education</strong>.
 							<br></br>
-							<br></br>I first fell in love with <code>code</code> in 4th grade,
+							<br></br>I first fell in love with <code>coding</code> in 4th grade,
 							making web pages on Neopets with <strong>HTML</strong>. Years
 							later, while studying for the LSAT, I realized that I didn't want
 							to be a lawyer, but I liked the logic puzzles section. I was
