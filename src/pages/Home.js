@@ -60,7 +60,7 @@ const useStyles = makeStyles({
 });
 
 export default function Home() {
-	const { firstName, headline, profilePic } = data;
+	const { firstName, profilePic } = data;
 	const profilepic = "images/" + profilePic;
 	const classes = useStyles();
 
