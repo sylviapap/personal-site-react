@@ -77,9 +77,6 @@ export default function Home() {
 								<Typography gutterBottom variant="h2" component="h2">
 									Hi, I'm {firstName}
 								</Typography>
-								<Typography variant="body1" gutterBottom>
-									{headline}
-								</Typography>
 								{contactItems.map((item) => (
 									<Button
 										variant="contained"
@@ -101,31 +98,8 @@ export default function Home() {
 				<Card className={classes.root}>
 					<CardContent>
 						<Typography variant="body2" gutterBottom>
-							Before joining the world of <code>tech</code>, I studied{" "}
-							<strong>philosophy, psychology, economics, math,</strong> and{" "}
-							<strong>international relations</strong>. I worked in{" "}
-							<strong>finance, law</strong>, and <strong>education</strong>.
-							<br></br>
-							<br></br>I first fell in love with <code>coding</code> in 4th grade,
-							making web pages on Neopets with <strong>HTML</strong>. Years
-							later, while studying for the LSAT, I realized that I didn't want
-							to be a lawyer, but I liked the logic puzzles section. I was
-							reminded of everything I knew about{" "}
-							<strong>computer science</strong> - Boolean algebra, truth tables,
-							and objectivity. So I moved to <strong>San Francisco</strong>,
-							completed Flatiron School's Full Stack Web Development{" "}
-							<Link
-								className={classes.links}
-								underline="none"
-								href="https://flatironschool.com/career-courses/coding-bootcamp/san-francisco"
-							>
-								immersive
-							</Link>
-							, and have been loving every day of the developer life since. As
-							they say, <code>window.history.pushState("the rest", "is")</code>
-							<br></br>
-							<br></br>
-							Other passions: dogs, piano, kickboxing, travel, weird food, and{" "}
+							Experienced in: 
+							philosophy, psychology, economics, math, international relations, finance, law, dogs, piano, kickboxing, travel, weird food, and{" "}
 							<Link
 								className={classes.links}
 								underline="none"

@@ -1,7 +1,6 @@
 export const data = {
 	firstName: "Sylvia",
 	lastName: "Pap",
-	headline: "Current Software Engineer, former Aspiring Lawyer",
 	profilePic: "profilepic.png",
 	website: "http://www.sylviapap.com",
 	github: "http://github.com/sylviapap",
